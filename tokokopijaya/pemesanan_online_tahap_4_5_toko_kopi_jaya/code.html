@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+
+<html lang="id"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700&amp;family=EB+Garamond:wght@600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface-container-high": "#eae8e4",
+                        "on-secondary-fixed-variant": "#574500",
+                        "on-primary-fixed-variant": "#5b403c",
+                        "on-tertiary-fixed-variant": "#76320f",
+                        "surface-tint": "#745853",
+                        "primary-fixed": "#ffdad4",
+                        "surface-container-highest": "#e4e2de",
+                        "inverse-surface": "#30312e",
+                        "on-surface-variant": "#504442",
+                        "on-primary": "#ffffff",
+                        "on-background": "#1b1c1a",
+                        "tertiary": "#300d00",
+                        "tertiary-fixed-dim": "#ffb596",
+                        "secondary-fixed": "#ffe088",
+                        "on-error-container": "#93000a",
+                        "surface-container-lowest": "#ffffff",
+                        "primary": "#271310",
+                        "background": "#fbf9f5",
+                        "secondary": "#735c00",
+                        "tertiary-fixed": "#ffdbcd",
+                        "primary-fixed-dim": "#e3beb8",
+                        "secondary-container": "#fed65b",
+                        "on-error": "#ffffff",
+                        "surface-dim": "#dbdad6",
+                        "outline-variant": "#d3c3c0",
+                        "primary-container": "#3e2723",
+                        "outline": "#827472",
+                        "on-tertiary": "#ffffff",
+                        "surface": "#fbf9f5",
+                        "on-secondary": "#ffffff",
+                        "surface-bright": "#fbf9f5",
+                        "secondary-fixed-dim": "#e9c349",
+                        "on-secondary-fixed": "#241a00",
+                        "on-primary-container": "#ae8d87",
+                        "error-container": "#ffdad6",
+                        "inverse-on-surface": "#f2f0ed",
+                        "error": "#ba1a1a",
+                        "surface-container": "#efeeea",
+                        "on-tertiary-fixed": "#360f00",
+                        "surface-container-low": "#f5f3ef",
+                        "on-secondary-container": "#745c00",
+                        "on-surface": "#1b1c1a",
+                        "inverse-primary": "#e3beb8",
+                        "tertiary-container": "#521b00",
+                        "on-tertiary-container": "#d67d54",
+                        "surface-variant": "#e4e2de",
+                        "on-primary-fixed": "#2b1613"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "margin-desktop": "40px",
+                        "container-max-width": "1200px",
+                        "base": "8px",
+                        "gutter": "24px",
+                        "margin-mobile": "16px"
+                    },
+                    "fontFamily": {
+                        "plusJakartaSans": ["Plus Jakarta Sans"],
+                        "ebGaramond": ["EB Garamond"],
+                        "title-md": ["Plus Jakarta Sans"],
+                        "headline-lg": ["EB Garamond"],
+                        "headline-lg-mobile": ["EB Garamond"],
+                        "display-lg": ["EB Garamond"],
+                        "label-caps": ["Plus Jakarta Sans"],
+                        "body-lg": ["Plus Jakarta Sans"],
+                        "body-sm": ["Plus Jakarta Sans"]
+                    },
+                    "fontSize": {
+                        "title-md": ["20px", {"lineHeight": "1.4", "fontWeight": "600"}],
+                        "headline-lg": ["32px", {"lineHeight": "1.2", "fontWeight": "600"}],
+                        "headline-lg-mobile": ["28px", {"lineHeight": "1.2", "fontWeight": "600"}],
+                        "display-lg": ["48px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "600"}],
+                        "label-caps": ["12px", {"lineHeight": "1", "letterSpacing": "0.05em", "fontWeight": "700"}],
+                        "body-lg": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                        "body-sm": ["14px", {"lineHeight": "1.5", "fontWeight": "400"}]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .coffee-glow {
+            box-shadow: 0 16px 32px rgba(62, 39, 35, 0.12);
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-surface font-body-lg">
+<!-- TopNavBar -->
+<header class="sticky top-0 z-50 bg-surface/80 dark:bg-surface-container-highest/80 backdrop-blur-md border-b border-outline-variant/20 shadow-sm w-full max-w-container-max-width mx-auto flex justify-between items-center px-margin-mobile md:px-margin-desktop py-4">
+<div class="font-ebGaramond text-headline-lg font-semibold text-primary dark:text-primary-fixed">Toko Kopi Jaya</div>
+<div class="hidden md:flex gap-8 items-center">
+<a class="font-plusJakartaSans text-body-lg text-on-surface-variant hover:text-primary transition-colors" href="../menu_toko_kopi_jaya/code.html">Menu</a>
+<a class="font-plusJakartaSans text-body-lg text-on-surface-variant hover:text-primary transition-colors" href="../reservasi_toko_kopi_jaya/code.html">Reservasi</a>
+<a class="font-plusJakartaSans text-body-lg text-on-surface-variant hover:text-primary transition-colors" href="../tentang_kami_toko_kopi_jaya/code.html">Tentang Kami</a>
+<a class="font-plusJakartaSans text-body-lg text-on-surface-variant hover:text-primary transition-colors" href="../galeri_kontak_toko_kopi_jaya/code.html">Lokasi</a>
+</div>
+<a href="../pemesanan_online_tahap_1_3_toko_kopi_jaya/code.html" class="bg-primary-container text-on-primary-container px-6 py-2 rounded-full font-plusJakartaSans text-body-lg active:scale-95 duration-200 transition-all hover:bg-surface-container-high/50 inline-block">
+            Pesan Sekarang
+        </a>
+</header>
+<main class="max-w-container-max-width mx-auto px-margin-mobile md:px-margin-desktop py-12">
+<!-- Progress Indicator -->
+<div class="mb-12">
+<div class="flex items-center justify-between max-w-3xl mx-auto relative">
+<!-- Progress Line -->
+<div class="absolute top-1/2 left-0 w-full h-[2px] bg-surface-container-high -translate-y-1/2 z-0">
+<div class="h-full bg-secondary w-3/4"></div>
+</div>
+<!-- Steps -->
+<div class="relative z-10 flex flex-col items-center">
+<div class="w-10 h-10 rounded-full bg-secondary text-on-secondary flex items-center justify-center font-bold">1</div>
+<span class="mt-2 font-label-caps text-on-surface-variant">Menu</span>
+</div>
+<div class="relative z-10 flex flex-col items-center">
+<div class="w-10 h-10 rounded-full bg-secondary text-on-secondary flex items-center justify-center font-bold">2</div>
+<span class="mt-2 font-label-caps text-on-surface-variant">Waktu</span>
+</div>
+<div class="relative z-10 flex flex-col items-center">
+<div class="w-10 h-10 rounded-full bg-secondary text-on-secondary flex items-center justify-center font-bold">3</div>
+<span class="mt-2 font-label-caps text-on-surface-variant">Detail</span>
+</div>
+<div class="relative z-10 flex flex-col items-center">
+<div class="w-10 h-10 rounded-full bg-secondary text-on-secondary flex items-center justify-center font-bold">4</div>
+<span class="mt-2 font-label-caps text-primary">Pembayaran</span>
+</div>
+<div class="relative z-10 flex flex-col items-center">
+<div class="w-10 h-10 rounded-full bg-surface-container-high text-on-surface-variant flex items-center justify-center font-bold border-2 border-outline-variant">5</div>
+<span class="mt-2 font-label-caps text-on-surface-variant">Konfirmasi</span>
+</div>
+</div>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter">
+<!-- Left Column: Payment & Review -->
+<div class="lg:col-span-8 space-y-gutter">
+<!-- Step 4: Payment Section -->
+<section class="bg-surface-container-lowest rounded-xl p-8 coffee-glow border border-secondary/10">
+<h2 class="font-ebGaramond text-headline-lg text-primary mb-6">Pilih Metode Pembayaran</h2>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
+<!-- Bank Transfer -->
+<div class="border-2 border-secondary bg-secondary/5 rounded-lg p-4 cursor-pointer flex items-center gap-4">
+<div class="w-12 h-12 rounded-full bg-secondary-container flex items-center justify-center">
+<span class="material-symbols-outlined text-on-secondary-container">account_balance</span>
+</div>
+<div>
+<p class="font-title-md text-primary">Transfer Bank</p>
+<p class="text-body-sm text-on-surface-variant">BCA, Mandiri, BNI</p>
+</div>
+</div>
+<!-- E-Wallet -->
+<div class="border border-outline-variant rounded-lg p-4 cursor-pointer hover:border-secondary transition-colors flex items-center gap-4">
+<div class="w-12 h-12 rounded-full bg-surface-container-high flex items-center justify-center">
+<span class="material-symbols-outlined text-on-surface-variant">account_balance_wallet</span>
+</div>
+<div>
+<p class="font-title-md text-primary">E-Wallet</p>
+<p class="text-body-sm text-on-surface-variant">GoPay, OVO, Dana</p>
+</div>
+</div>
+</div>
+<!-- Payment Details Card -->
+<div class="bg-surface-container-low rounded-lg p-6 mb-6 border-l-4 border-secondary">
+<p class="font-label-caps text-secondary mb-2">INSTUKSI TRANSFER</p>
+<p class="font-body-lg text-primary mb-4">Silakan transfer tepat sesuai nominal hingga 3 digit terakhir ke rekening berikut:</p>
+<div class="flex items-center justify-between bg-white p-4 rounded border border-outline-variant/30">
+<div>
+<p class="text-body-sm text-on-surface-variant">Bank Central Asia (BCA)</p>
+<p class="font-title-md text-primary">8830 1234 5678</p>
+<p class="text-body-sm text-on-surface-variant">a/n PT Kopi Jaya Abadi</p>
+</div>
+<button class="text-secondary font-bold text-body-sm hover:underline">SALIN</button>
+</div>
+</div>
+<!-- Upload Proof -->
+<div class="space-y-4">
+<label class="font-label-caps text-on-surface-variant block">UNGGAH BUKTI PEMBAYARAN</label>
+<div class="border-2 border-dashed border-outline-variant rounded-xl p-8 text-center hover:bg-surface-container-high/30 transition-all cursor-pointer">
+<span class="material-symbols-outlined text-4xl text-outline mb-2">cloud_upload</span>
+<p class="text-body-lg text-on-surface-variant">Klik untuk pilih file atau seret gambar ke sini</p>
+<p class="text-body-sm text-outline mt-1">Format JPG, PNG atau PDF (Maks. 2MB)</p>
+</div>
+</div>
+</section>
+<!-- Step 5: Review & Confirmation -->
+<section class="bg-surface-container-lowest rounded-xl p-8 coffee-glow border border-secondary/10">
+<h2 class="font-ebGaramond text-headline-lg text-primary mb-6">Konfirmasi Pesanan</h2>
+<div class="space-y-6">
+<!-- Order Items Review -->
+<div class="flex gap-4 pb-6 border-b border-outline-variant/20">
+<img alt="Latte" class="w-20 h-20 object-cover rounded-lg" data-alt="A top-down professional shot of a perfect latte in a ceramic cup, featuring intricate rosetta latte art on a dark wood table. The scene is bathed in warm morning sunlight, creating soft shadows and highlighting the rich, creamy texture of the foam. The aesthetic is clean and premium, following the elegant warmth brand theme." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBwlFXqy2ORcHT5T_oIEqCBIUtIBH-PnqpKZSC744LgCs9Xeg9KwYBrA1kl1mctheJ2uzyKg9FxfXBb-X4Rg5uHciq4hSY85c_tX8Fue-9F-3nrtacx6y6Tnh9qiKiQkn_12b-JvoVhb4SN7p88inwc-to0-cY2KobEmS5ym044msD7meXDYHyMhP4b5xk0ObEly3Wbk6ny63_AXITbtPhMedH6EDmVf3UbEUBgcabPAG_Ga9nfOi1S25zmNslFuNwiWMKX8yPQht_h"/>
+<div class="flex-1">
+<div class="flex justify-between items-start">
+<h4 class="font-title-md text-primary">Signature Espresso Latte</h4>
+<p class="font-title-md text-primary">Rp 45.000</p>
+</div>
+<p class="text-body-sm text-on-surface-variant">Ukuran: Regular | Less Sugar</p>
+<p class="text-body-sm text-on-surface-variant">Jumlah: 1</p>
+</div>
+</div>
+<!-- Data Review -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<div>
+<p class="font-label-caps text-secondary mb-2">DETAIL PELANGGAN</p>
+<p class="font-body-lg font-bold text-primary">Budi Santoso</p>
+<p class="text-body-sm text-on-surface-variant">budi.santoso@email.com</p>
+<p class="text-body-sm text-on-surface-variant">+62 812-3456-7890</p>
+</div>
+<div>
+<p class="font-label-caps text-secondary mb-2">WAKTU PENGAMBILAN</p>
+<p class="font-body-lg font-bold text-primary">Sabtu, 24 Mei 2024</p>
+<p class="text-body-sm text-on-surface-variant">Estimasi Jam: 14:30 WIB</p>
+<p class="text-body-sm text-on-surface-variant">Lokasi: Cabang Senopati</p>
+</div>
+</div>
+<!-- Terms Checkbox -->
+<div class="flex items-start gap-3 pt-6">
+<input class="mt-1 rounded border-outline text-secondary focus:ring-secondary w-5 h-5" id="terms" type="checkbox"/>
+<label class="text-body-sm text-on-surface-variant" for="terms">
+                                Saya menyetujui <span class="text-secondary font-bold underline cursor-pointer">Syarat &amp; Ketentuan</span> serta <span class="text-secondary font-bold underline cursor-pointer">Kebijakan Privasi</span> Toko Kopi Jaya. Saya memastikan bahwa data yang saya masukkan adalah benar.
+                            </label>
+</div>
+</div>
+</section>
+</div>
+<!-- Right Column: Price Summary -->
+<div class="lg:col-span-4">
+<div class="sticky top-28 bg-primary-container text-on-primary-container rounded-xl p-8 coffee-glow">
+<h3 class="font-ebGaramond text-headline-lg text-on-primary mb-6">Ringkasan Harga</h3>
+<div class="space-y-4 border-b border-on-primary-container/20 pb-6">
+<div class="flex justify-between text-body-lg">
+<span class="opacity-80">Subtotal</span>
+<span>Rp 45.000</span>
+</div>
+<div class="flex justify-between text-body-lg">
+<span class="opacity-80">Biaya Layanan</span>
+<span>Rp 2.000</span>
+</div>
+<div class="flex justify-between text-body-lg">
+<span class="opacity-80">Kode Unik</span>
+<span class="text-secondary-fixed">+Rp 123</span>
+</div>
+</div>
+<div class="pt-6 mb-8">
+<div class="flex justify-between items-end">
+<span class="font-label-caps opacity-80">TOTAL PEMBAYARAN</span>
+<span class="font-ebGaramond text-3xl font-bold text-secondary-fixed">Rp 47.123</span>
+</div>
+</div>
+<div class="space-y-4">
+<button class="w-full bg-secondary-container text-on-secondary-container py-4 rounded-full font-plusJakartaSans font-bold text-title-md active:scale-95 transition-all flex items-center justify-center gap-2">
+                            Konfirmasi &amp; Bayar
+                            <span class="material-symbols-outlined">payments</span>
+</button>
+<button class="w-full border border-on-primary-container/30 text-on-primary py-3 rounded-full font-plusJakartaSans text-body-lg hover:bg-white/5 active:scale-95 transition-all">
+                            Kembali
+                        </button>
+</div>
+<div class="mt-8 flex items-center gap-3 p-4 bg-white/5 rounded-lg border border-white/10">
+<span class="material-symbols-outlined text-secondary-fixed">verified_user</span>
+<p class="text-body-sm opacity-70">Pembayaran aman &amp; terenkripsi oleh sistem kami.</p>
+</div>
+</div>
+</div>
+</div>
+</main>
+<!-- Footer -->
+<footer class="w-full bg-primary dark:bg-surface-container-highest border-t border-secondary/20 px-margin-mobile md:px-margin-desktop py-12 flex flex-col md:flex-row justify-between items-center gap-8 mt-12">
+<div class="flex flex-col items-center md:items-start gap-4">
+<div class="font-ebGaramond text-headline-lg text-secondary-fixed">Toko Kopi Jaya</div>
+<p class="font-plusJakartaSans text-body-sm text-on-primary/60 text-center md:text-left max-w-md">© 2024 Toko Kopi Jaya. Kehangatan yang Elegan di Setiap Cangkir.</p>
+</div>
+<div class="flex gap-6 flex-wrap justify-center">
+<a class="font-plusJakartaSans text-body-sm text-on-primary/60 hover:text-secondary-fixed transition-all hover:underline decoration-secondary-fixed underline-offset-4" href="#">Kebijakan Privasi</a>
+<a class="font-plusJakartaSans text-body-sm text-on-primary/60 hover:text-secondary-fixed transition-all hover:underline decoration-secondary-fixed underline-offset-4" href="#">Syarat &amp; Ketentuan</a>
+<a class="font-plusJakartaSans text-body-sm text-on-primary/60 hover:text-secondary-fixed transition-all hover:underline decoration-secondary-fixed underline-offset-4" href="#">Bantuan</a>
+<a class="font-plusJakartaSans text-body-sm text-on-primary/60 hover:text-secondary-fixed transition-all hover:underline decoration-secondary-fixed underline-offset-4" href="#">Karir</a>
+</div>
+</footer>
+</body></html>

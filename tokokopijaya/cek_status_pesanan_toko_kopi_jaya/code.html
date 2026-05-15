@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+
+<html class="light" lang="id"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700&amp;family=EB+Garamond:wght@600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .coffee-glow {
+            box-shadow: 0 16px 32px rgba(62, 39, 35, 0.12);
+        }
+        .glass-nav {
+            backdrop-filter: blur(10px);
+        }
+    </style>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface-container-high": "#eae8e4",
+                        "on-secondary-fixed-variant": "#574500",
+                        "on-primary-fixed-variant": "#5b403c",
+                        "on-tertiary-fixed-variant": "#76320f",
+                        "surface-tint": "#745853",
+                        "primary-fixed": "#ffdad4",
+                        "surface-container-highest": "#e4e2de",
+                        "inverse-surface": "#30312e",
+                        "on-surface-variant": "#504442",
+                        "on-primary": "#ffffff",
+                        "on-background": "#1b1c1a",
+                        "tertiary": "#300d00",
+                        "tertiary-fixed-dim": "#ffb596",
+                        "secondary-fixed": "#ffe088",
+                        "on-error-container": "#93000a",
+                        "surface-container-lowest": "#ffffff",
+                        "primary": "#271310",
+                        "background": "#fbf9f5",
+                        "secondary": "#735c00",
+                        "tertiary-fixed": "#ffdbcd",
+                        "primary-fixed-dim": "#e3beb8",
+                        "secondary-container": "#fed65b",
+                        "on-error": "#ffffff",
+                        "surface-dim": "#dbdad6",
+                        "outline-variant": "#d3c3c0",
+                        "primary-container": "#3e2723",
+                        "outline": "#827472",
+                        "on-tertiary": "#ffffff",
+                        "surface": "#fbf9f5",
+                        "on-secondary": "#ffffff",
+                        "surface-bright": "#fbf9f5",
+                        "secondary-fixed-dim": "#e9c349",
+                        "on-secondary-fixed": "#241a00",
+                        "on-primary-container": "#ae8d87",
+                        "error-container": "#ffdad6",
+                        "inverse-on-surface": "#f2f0ed",
+                        "error": "#ba1a1a",
+                        "surface-container": "#efeeea",
+                        "on-tertiary-fixed": "#360f00",
+                        "surface-container-low": "#f5f3ef",
+                        "on-secondary-container": "#745c00",
+                        "on-surface": "#1b1c1a",
+                        "inverse-primary": "#e3beb8",
+                        "tertiary-container": "#521b00",
+                        "on-tertiary-container": "#d67d54",
+                        "surface-variant": "#e4e2de",
+                        "on-primary-fixed": "#2b1613"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "margin-desktop": "40px",
+                        "container-max-width": "1200px",
+                        "base": "8px",
+                        "gutter": "24px",
+                        "margin-mobile": "16px"
+                    },
+                    "fontFamily": {
+                        "plusJakartaSans": ["Plus Jakarta Sans", "sans-serif"],
+                        "ebGaramond": ["EB Garamond", "serif"],
+                        "title-md": ["Plus Jakarta Sans"],
+                        "headline-lg": ["EB Garamond"],
+                        "headline-lg-mobile": ["EB Garamond"],
+                        "display-lg": ["EB Garamond"],
+                        "label-caps": ["Plus Jakarta Sans"],
+                        "body-lg": ["Plus Jakarta Sans"],
+                        "body-sm": ["Plus Jakarta Sans"]
+                    },
+                    "fontSize": {
+                        "title-md": ["20px", {"lineHeight": "1.4", "fontWeight": "600"}],
+                        "headline-lg": ["32px", {"lineHeight": "1.2", "fontWeight": "600"}],
+                        "headline-lg-mobile": ["28px", {"lineHeight": "1.2", "fontWeight": "600"}],
+                        "display-lg": ["48px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "600"}],
+                        "label-caps": ["12px", {"lineHeight": "1", "letterSpacing": "0.05em", "fontWeight": "700"}],
+                        "body-lg": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                        "body-sm": ["14px", {"lineHeight": "1.5", "fontWeight": "400"}]
+                    }
+                },
+            },
+        }
+    </script>
+</head>
+<body class="bg-background text-on-surface font-body-lg">
+<!-- TopNavBar -->
+<nav class="sticky top-0 z-50 flex justify-between items-center px-margin-mobile md:px-margin-desktop py-4 w-full max-w-container-max-width mx-auto bg-surface/80 dark:bg-surface-container-highest/80 backdrop-blur-md border-b border-outline-variant/20 shadow-sm">
+<div class="font-ebGaramond text-headline-lg font-semibold text-primary dark:text-primary-fixed">Toko Kopi Jaya</div>
+<div class="hidden md:flex items-center gap-8">
+<a class="font-plusJakartaSans text-body-lg text-on-surface-variant hover:text-primary transition-colors" href="../menu_toko_kopi_jaya/code.html">Menu</a>
+<a class="font-plusJakartaSans text-body-lg text-on-surface-variant hover:text-primary transition-colors" href="../reservasi_toko_kopi_jaya/code.html">Reservasi</a>
+<a class="font-plusJakartaSans text-body-lg text-on-surface-variant hover:text-primary transition-colors" href="../tentang_kami_toko_kopi_jaya/code.html">Tentang Kami</a>
+<a class="font-plusJakartaSans text-body-lg text-on-surface-variant hover:text-primary transition-colors" href="../galeri_kontak_toko_kopi_jaya/code.html">Lokasi</a>
+</div>
+<a href="../pemesanan_online_tahap_1_3_toko_kopi_jaya/code.html" class="bg-primary-container text-on-primary-container font-plusJakartaSans text-body-lg px-6 py-2 rounded-lg active:scale-95 duration-200 transition-all hover:bg-surface-container-high/50 inline-block\">Pesan Sekarang</a>
+</nav>
+<main class="min-h-screen">
+<!-- Hero Search Section -->
+<section class="relative py-16 md:py-24 px-margin-mobile md:px-margin-desktop overflow-hidden">
+<div class="absolute inset-0 -z-10">
+<img class="w-full h-full object-cover opacity-10 blur-[2px]" data-alt="A cinematic, warm-toned close-up of a rustic wooden coffee bar in a high-end Jakarta cafe. The background is softly blurred, showing steam rising from a porcelain cup and golden ambient light filtering through large windows. The overall mood is peaceful, premium, and cozy, utilizing deep espresso and cream tones with a subtle golden glow." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAn1jBG_yvp9GyoLPeqnKuHq3Vo5nOfnNXUhKLNUZlcOZADroirUk56Z21x11dIMh_wUIBXlJ8CcDkLlFsfIMb2xNaQxubxp5ONMBYeS3JSEXQ7HgvJ_0im9Iwouox4mybXhGNNwXoTa8BDwU0barslbC8sMKpFOtoEjXerx7hYH3-7IdrIgx1v0UDrf_kSVjfuZYRpsYprq9PK4_A_wXBOff5ElLJTf0erGh5tR2XWVf-6ZZvfCDuLxU3Lr2wqkvAVxWbGzVmVFCVM"/>
+</div>
+<div class="max-w-3xl mx-auto text-center space-y-8">
+<div class="space-y-4">
+<span class="font-label-caps text-label-caps text-secondary uppercase tracking-widest">Pantau Pesanan Anda</span>
+<h1 class="font-display-lg text-display-lg text-primary">Kehangatan Sedang Menuju Anda</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-xl mx-auto">
+                        Masukkan nomor pesanan yang tertera pada struk atau email konfirmasi Anda untuk melihat status terbaru.
+                    </p>
+</div>
+<!-- Search Input -->
+<div class="relative max-w-md mx-auto group">
+<div class="bg-surface rounded-xl p-2 flex items-center border border-outline-variant/30 coffee-glow transition-all focus-within:ring-2 focus-within:ring-secondary/20">
+<span class="material-symbols-outlined px-3 text-outline">confirmation_number</span>
+<input class="w-full bg-transparent border-none focus:ring-0 font-plusJakartaSans text-body-lg text-primary placeholder:text-outline-variant" placeholder="Contoh: JAYA-12345" type="text"/>
+<button class="bg-primary text-on-primary px-6 py-3 rounded-lg font-title-md text-body-lg hover:bg-primary-container transition-colors">
+                            Cek Status
+                        </button>
+</div>
+</div>
+</div>
+</section>
+<!-- Status Timeline Display (Active State Example) -->
+<section class="max-w-4xl mx-auto px-margin-mobile md:px-margin-desktop pb-24">
+<div class="bg-white rounded-2xl p-8 md:p-12 coffee-glow border border-outline-variant/10 relative overflow-hidden">
+<!-- Status Badge -->
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-6 mb-12 border-b border-outline-variant/10 pb-8">
+<div>
+<h2 class="font-title-md text-title-md text-primary">Pesanan #JAYA-12345</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Dipesan pada 24 Okt 2024, 14:20 WIB</p>
+</div>
+<div class="bg-tertiary-fixed text-on-tertiary-fixed px-4 py-2 rounded-full inline-flex items-center gap-2 w-fit">
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">local_cafe</span>
+<span class="font-label-caps text-label-caps uppercase">Sedang Disiapkan</span>
+</div>
+</div>
+<!-- Visual Timeline -->
+<div class="relative">
+<!-- Progress Line -->
+<div class="absolute left-8 md:left-1/2 md:-translate-x-1/2 top-0 bottom-0 w-0.5 bg-surface-container-high hidden md:block"></div>
+<div class="absolute left-8 top-0 bottom-0 w-0.5 bg-surface-container-high md:hidden"></div>
+<!-- Steps -->
+<div class="space-y-12 relative">
+<!-- Step 1: Completed -->
+<div class="flex flex-row md:flex-row-reverse items-start gap-8 md:gap-0">
+<div class="md:w-1/2 md:pl-12">
+<div class="bg-surface-container-low p-6 rounded-xl border border-outline-variant/20 hover:translate-x-1 transition-transform cursor-default">
+<h3 class="font-title-md text-body-lg text-primary">Pesanan Diterima</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Sistem kami telah memvalidasi pembayaran Anda.</p>
+<span class="block mt-3 font-label-caps text-label-caps text-outline">14:22 WIB</span>
+</div>
+</div>
+<div class="relative z-10 flex items-center justify-center">
+<div class="w-16 h-16 rounded-full bg-primary flex items-center justify-center text-on-primary ring-8 ring-background">
+<span class="material-symbols-outlined">check_circle</span>
+</div>
+</div>
+<div class="hidden md:block md:w-1/2"></div>
+</div>
+<!-- Step 2: Active -->
+<div class="flex flex-row items-start gap-8 md:gap-0">
+<div class="hidden md:block md:w-1/2"></div>
+<div class="relative z-10 flex items-center justify-center">
+<div class="w-16 h-16 rounded-full bg-secondary-container flex items-center justify-center text-on-secondary-container ring-8 ring-background">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">skillet</span>
+</div>
+</div>
+<div class="md:w-1/2 md:pl-12">
+<div class="bg-white p-6 rounded-xl border-2 border-secondary/30 coffee-glow">
+<h3 class="font-title-md text-body-lg text-primary">Sedang Disiapkan</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Barista kami sedang meracik biji kopi pilihan untuk Anda.</p>
+<div class="mt-4 h-1.5 w-full bg-surface-container-high rounded-full overflow-hidden">
+<div class="h-full bg-secondary w-2/3 rounded-full"></div>
+</div>
+<span class="block mt-3 font-label-caps text-label-caps text-secondary">PROSES: 65%</span>
+</div>
+</div>
+</div>
+<!-- Step 3: Pending -->
+<div class="flex flex-row md:flex-row-reverse items-start gap-8 md:gap-0 opacity-40">
+<div class="md:w-1/2 md:pl-12">
+<div class="bg-surface-container-low p-6 rounded-xl border border-outline-variant/10">
+<h3 class="font-title-md text-body-lg text-on-surface-variant">Siap Diambil</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Pesanan Anda akan segera tersedia di meja bar.</p>
+</div>
+</div>
+<div class="relative z-10 flex items-center justify-center">
+<div class="w-16 h-16 rounded-full bg-surface-container-highest flex items-center justify-center text-outline ring-8 ring-background">
+<span class="material-symbols-outlined">shopping_bag</span>
+</div>
+</div>
+<div class="hidden md:block md:w-1/2"></div>
+</div>
+</div>
+</div>
+<!-- Order Details Summary -->
+<div class="mt-16 p-8 bg-surface-container-low rounded-xl border border-outline-variant/20">
+<h4 class="font-title-md text-body-lg text-primary mb-4">Ringkasan Pesanan</h4>
+<div class="space-y-3">
+<div class="flex justify-between items-center">
+<span class="text-on-surface-variant">1x Kopi Susu Gula Aren (Hot)</span>
+<span class="font-semibold">Rp 28.000</span>
+</div>
+<div class="flex justify-between items-center">
+<span class="text-on-surface-variant">1x Croissant Almond</span>
+<span class="font-semibold">Rp 32.000</span>
+</div>
+<div class="pt-3 border-t border-outline-variant/20 flex justify-between items-center">
+<span class="font-title-md text-primary">Total Pembayaran</span>
+<span class="font-title-md text-primary">Rp 60.000</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- CTA / Help Section -->
+<section class="max-w-container-max-width mx-auto px-margin-mobile md:px-margin-desktop py-12 text-center">
+<div class="inline-flex flex-col md:flex-row gap-4 items-center justify-center bg-surface-container-high/40 p-6 rounded-2xl border border-outline-variant/10">
+<p class="font-body-sm text-on-surface-variant">Mengalami kendala dengan pesanan Anda?</p>
+<div class="flex gap-4">
+<button class="flex items-center gap-2 text-primary font-semibold hover:underline">
+<span class="material-symbols-outlined text-[20px]">support_agent</span>
+                        Hubungi Bantuan
+                    </button>
+<span class="text-outline">|</span>
+<button class="flex items-center gap-2 text-primary font-semibold hover:underline">
+<span class="material-symbols-outlined text-[20px]">chat</span>
+                        WhatsApp Kami
+                    </button>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full px-margin-mobile md:px-margin-desktop py-12 flex flex-col md:flex-row justify-between items-center gap-8 bg-primary dark:bg-surface-container-highest border-t border-secondary/20">
+<div class="font-ebGaramond text-headline-lg text-secondary-fixed">Toko Kopi Jaya</div>
+<div class="flex flex-wrap justify-center gap-8">
+<a class="font-plusJakartaSans text-body-sm text-on-primary/60 hover:text-secondary-fixed transition-all duration-300" href="#">Kebijakan Privasi</a>
+<a class="font-plusJakartaSans text-body-sm text-on-primary/60 hover:text-secondary-fixed transition-all duration-300" href="#">Syarat &amp; Ketentuan</a>
+<a class="font-plusJakartaSans text-body-sm text-on-primary/60 hover:text-secondary-fixed transition-all duration-300" href="#">Bantuan</a>
+<a class="font-plusJakartaSans text-body-sm text-on-primary/60 hover:text-secondary-fixed transition-all duration-300" href="#">Karir</a>
+</div>
+<div class="text-center md:text-right">
+<p class="font-plusJakartaSans text-body-sm text-on-primary dark:text-on-surface">© 2024 Toko Kopi Jaya. Kehangatan yang Elegan di Setiap Cangkir.</p>
+</div>
+</footer>
+</body></html>

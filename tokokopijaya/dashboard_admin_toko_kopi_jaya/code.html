@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+
+<html class="light" lang="id"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&amp;family=EB+Garamond:wght@600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "surface-container-high": "#eae8e4",
+                    "on-secondary-fixed-variant": "#574500",
+                    "on-primary-fixed-variant": "#5b403c",
+                    "on-tertiary-fixed-variant": "#76320f",
+                    "surface-tint": "#745853",
+                    "primary-fixed": "#ffdad4",
+                    "surface-container-highest": "#e4e2de",
+                    "inverse-surface": "#30312e",
+                    "on-surface-variant": "#504442",
+                    "on-primary": "#ffffff",
+                    "on-background": "#1b1c1a",
+                    "tertiary": "#300d00",
+                    "tertiary-fixed-dim": "#ffb596",
+                    "secondary-fixed": "#ffe088",
+                    "on-error-container": "#93000a",
+                    "surface-container-lowest": "#ffffff",
+                    "primary": "#271310",
+                    "background": "#fbf9f5",
+                    "secondary": "#735c00",
+                    "tertiary-fixed": "#ffdbcd",
+                    "primary-fixed-dim": "#e3beb8",
+                    "secondary-container": "#fed65b",
+                    "on-error": "#ffffff",
+                    "surface-dim": "#dbdad6",
+                    "outline-variant": "#d3c3c0",
+                    "primary-container": "#3e2723",
+                    "outline": "#827472",
+                    "on-tertiary": "#ffffff",
+                    "surface": "#fbf9f5",
+                    "on-secondary": "#ffffff",
+                    "surface-bright": "#fbf9f5",
+                    "secondary-fixed-dim": "#e9c349",
+                    "on-secondary-fixed": "#241a00",
+                    "on-primary-container": "#ae8d87",
+                    "error-container": "#ffdad6",
+                    "inverse-on-surface": "#f2f0ed",
+                    "error": "#ba1a1a",
+                    "surface-container": "#efeeea",
+                    "on-tertiary-fixed": "#360f00",
+                    "surface-container-low": "#f5f3ef",
+                    "on-secondary-container": "#745c00",
+                    "on-surface": "#1b1c1a",
+                    "inverse-primary": "#e3beb8",
+                    "tertiary-container": "#521b00",
+                    "on-tertiary-container": "#d67d54",
+                    "surface-variant": "#e4e2de",
+                    "on-primary-fixed": "#2b1613"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "margin-desktop": "40px",
+                    "container-max-width": "1200px",
+                    "base": "8px",
+                    "gutter": "24px",
+                    "margin-mobile": "16px"
+            },
+            "fontFamily": {
+                    "plusJakartaSans": ["Plus Jakarta Sans", "sans-serif"],
+                    "ebGaramond": ["EB Garamond", "serif"],
+                    "title-md": ["Plus Jakarta Sans", "sans-serif"],
+                    "headline-lg": ["EB Garamond", "serif"],
+                    "headline-lg-mobile": ["EB Garamond", "serif"],
+                    "display-lg": ["EB Garamond", "serif"],
+                    "label-caps": ["Plus Jakarta Sans", "sans-serif"],
+                    "body-lg": ["Plus Jakarta Sans", "sans-serif"],
+                    "body-sm": ["Plus Jakarta Sans", "sans-serif"]
+            },
+            "fontSize": {
+                    "title-md": ["20px", {"lineHeight": "1.4", "fontWeight": "600"}],
+                    "headline-lg": ["32px", {"lineHeight": "1.2", "fontWeight": "600"}],
+                    "headline-lg-mobile": ["28px", {"lineHeight": "1.2", "fontWeight": "600"}],
+                    "display-lg": ["48px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "600"}],
+                    "label-caps": ["12px", {"lineHeight": "1", "letterSpacing": "0.05em", "fontWeight": "700"}],
+                    "body-lg": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "body-sm": ["14px", {"lineHeight": "1.5", "fontWeight": "400"}]
+            }
+          }
+        }
+      }
+    </script>
+<style>
+        .coffee-glow {
+            box-shadow: 0 16px 32px rgba(62, 39, 35, 0.08);
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+</head>
+<body class="bg-background font-body-lg text-on-background min-h-screen flex">
+<!-- SideNavBar (Authority Source: JSON) -->
+<aside class="hidden md:flex flex-col h-screen w-64 fixed left-0 top-0 bg-primary dark:bg-surface-container-lowest border-r border-outline/10 shadow-[16px_0_32px_rgba(62,39,35,0.12)] z-50 overflow-y-auto py-6">
+<div class="px-6 mb-10">
+<h1 class="font-ebGaramond text-title-md text-secondary-fixed">Toko Kopi Jaya</h1>
+</div>
+<nav class="flex-1 space-y-1">
+<!-- Active Tab: Dashboard -->
+<a class="bg-secondary-container text-on-secondary-container rounded-lg mx-2 flex items-center gap-3 px-4 py-3 cursor-pointer active:opacity-80 transition-transform hover:translate-x-1" href="../dashboard_admin_toko_kopi_jaya/code.html">
+<span class="material-symbols-outlined" data-icon="dashboard">dashboard</span>
+<span class="font-plusJakartaSans text-body-sm">Dashboard</span>
+</a>
+<a class="text-on-primary/70 hover:text-on-primary hover:bg-primary-container/50 rounded-lg mx-2 flex items-center gap-3 px-4 py-3 cursor-pointer active:opacity-80 transition-transform hover:translate-x-1" href="../manajemen_pesanan_toko_kopi_jaya/code.html">
+<span class="material-symbols-outlined" data-icon="shopping_cart">shopping_cart</span>
+<span class="font-plusJakartaSans text-body-sm">Pesanan</span>
+</a>
+<a class="text-on-primary/70 hover:text-on-primary hover:bg-primary-container/50 rounded-lg mx-2 flex items-center gap-3 px-4 py-3 cursor-pointer active:opacity-80 transition-transform hover:translate-x-1" href="#inventori">
+<span class="material-symbols-outlined" data-icon="inventory_2">inventory_2</span>
+<span class="font-plusJakartaSans text-body-sm">Inventori</span>
+</a>
+<a class="text-on-primary/70 hover:text-on-primary hover:bg-primary-container/50 rounded-lg mx-2 flex items-center gap-3 px-4 py-3 cursor-pointer active:opacity-80 transition-transform hover:translate-x-1" href="#pelanggan">
+<span class="material-symbols-outlined" data-icon="group">group</span>
+<span class="font-plusJakartaSans text-body-sm">Pelanggan</span>
+</a>
+<a class="text-on-primary/70 hover:text-on-primary hover:bg-primary-container/50 rounded-lg mx-2 flex items-center gap-3 px-4 py-3 cursor-pointer active:opacity-80 transition-transform hover:translate-x-1" href="#laporan">
+<span class="material-symbols-outlined" data-icon="analytics">analytics</span>
+<span class="font-plusJakartaSans text-body-sm">Laporan</span>
+</a>
+</nav>
+<div class="mt-auto px-4 pt-6 border-t border-white/10">
+<div class="flex items-center gap-3 px-2 mb-6">
+<div class="w-10 h-10 rounded-full overflow-hidden border-2 border-secondary-fixed">
+<img alt="Admin Avatar" class="w-full h-full object-cover" data-alt="A professional and friendly portrait of a male coffee shop manager in his late 30s. He is wearing a clean, dark espresso-colored apron over a light cream linen shirt. The lighting is warm and cinematic, mimicking the golden hour inside a premium boutique cafe. The background is softly blurred, showing hints of copper coffee equipment and rich wooden textures." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDoGFnKqUnLQDjBJCSxiNf-r0zVuDCiVXN25o5ezmSSynjBq-aN7M_8gucnQyGUmNw51wun4zq3ft7a8O7i87PritpOqeIjxmy6_O2kFs5rVk7F1d5Ni1m_asL-5o0ZbKpvZOjVZY0tg8OWu5y9rN8a2ABOPuHSsaogHbv5pLA9-ZGSIrg1tYKGvzpfkb2UFqyLuabmr9-WxmPMkLcRRIM51pHzXAqD-udaD6NN1ZG5E899LyTb7QtdL9bDD8VTZKI5vWw-KpuepX0z"/>
+</div>
+<div>
+<p class="font-plusJakartaSans text-body-sm font-bold text-on-primary">Admin Jaya</p>
+<p class="text-[10px] uppercase tracking-wider text-on-primary/60">Manager Toko</p>
+</div>
+</div>
+<button class="w-full py-3 bg-secondary-fixed text-on-secondary-fixed font-plusJakartaSans font-bold text-body-sm rounded-lg hover:bg-secondary-container transition-all flex items-center justify-center gap-2">
+<span class="material-symbols-outlined text-[18px]" data-icon="point_of_sale">point_of_sale</span>
+                Buka Kasir
+            </button>
+</div>
+</aside>
+<!-- Main Content Canvas -->
+<main class="flex-1 md:ml-64 w-full min-h-screen px-margin-mobile md:px-margin-desktop py-8 max-w-[1440px] mx-auto">
+<!-- Header -->
+<header class="mb-10 flex flex-col md:flex-row md:items-center justify-between gap-4">
+<div>
+<h2 class="font-ebGaramond text-display-lg text-primary leading-tight">Ikhtisar Bisnis</h2>
+<p class="text-on-surface-variant font-plusJakartaSans text-body-lg">Selamat pagi, Jaya. Inilah performa tokomu hari ini.</p>
+</div>
+<div class="flex items-center gap-3">
+<button class="p-2 text-on-surface-variant hover:bg-surface-container-high rounded-full transition-all">
+<span class="material-symbols-outlined" data-icon="notifications">notifications</span>
+</button>
+<button class="p-2 text-on-surface-variant hover:bg-surface-container-high rounded-full transition-all">
+<span class="material-symbols-outlined" data-icon="settings">settings</span>
+</button>
+<div class="h-8 w-px bg-outline-variant/30 mx-2"></div>
+<div class="flex items-center gap-2 bg-white px-4 py-2 rounded-full border border-outline-variant/20 coffee-glow">
+<span class="material-symbols-outlined text-secondary" data-icon="calendar_today">calendar_today</span>
+<span class="font-plusJakartaSans text-body-sm font-semibold">24 Okt 2024</span>
+</div>
+</div>
+</header>
+<!-- Widgets Bento Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-gutter mb-10">
+<!-- Total Pesanan -->
+<div class="bg-white p-6 rounded-xl border border-outline-variant/20 coffee-glow flex flex-col justify-between group hover:border-secondary/40 transition-all">
+<div class="flex items-center justify-between mb-4">
+<div class="p-2 bg-primary-container text-on-primary-container rounded-lg">
+<span class="material-symbols-outlined" data-icon="shopping_basket">shopping_basket</span>
+</div>
+<span class="text-emerald-600 font-bold text-body-sm flex items-center gap-1">
+                        +12% <span class="material-symbols-outlined text-[14px]" data-icon="trending_up">trending_up</span>
+</span>
+</div>
+<div>
+<p class="text-on-surface-variant font-label-caps uppercase mb-1">Total Pesanan</p>
+<h3 class="font-plusJakartaSans text-[28px] font-extrabold text-primary">1,284</h3>
+</div>
+</div>
+<!-- Total Pelanggan -->
+<div class="bg-white p-6 rounded-xl border border-outline-variant/20 coffee-glow flex flex-col justify-between group hover:border-secondary/40 transition-all">
+<div class="flex items-center justify-between mb-4">
+<div class="p-2 bg-secondary-container text-on-secondary-container rounded-lg">
+<span class="material-symbols-outlined" data-icon="person_add">person_add</span>
+</div>
+<span class="text-emerald-600 font-bold text-body-sm flex items-center gap-1">
+                        +5% <span class="material-symbols-outlined text-[14px]" data-icon="trending_up">trending_up</span>
+</span>
+</div>
+<div>
+<p class="text-on-surface-variant font-label-caps uppercase mb-1">Total Pelanggan</p>
+<h3 class="font-plusJakartaSans text-[28px] font-extrabold text-primary">856</h3>
+</div>
+</div>
+<!-- Pesanan Diproses -->
+<div class="bg-white p-6 rounded-xl border border-outline-variant/20 coffee-glow flex flex-col justify-between group hover:border-secondary/40 transition-all">
+<div class="flex items-center justify-between mb-4">
+<div class="p-2 bg-tertiary-fixed text-on-tertiary-fixed rounded-lg">
+<span class="material-symbols-outlined" data-icon="hourglass_empty">hourglass_empty</span>
+</div>
+<span class="text-on-surface-variant/60 text-[11px] font-bold">LIVE</span>
+</div>
+<div>
+<p class="text-on-surface-variant font-label-caps uppercase mb-1">Sedang Diproses</p>
+<h3 class="font-plusJakartaSans text-[28px] font-extrabold text-primary">18</h3>
+</div>
+</div>
+<!-- Revenue (Custom Widget) -->
+<div class="bg-primary p-6 rounded-xl shadow-[0_20px_40px_rgba(39,19,16,0.15)] flex flex-col justify-between text-on-primary">
+<div class="flex items-center justify-between mb-4">
+<div class="p-2 bg-white/10 rounded-lg">
+<span class="material-symbols-outlined text-secondary-fixed" data-icon="payments">payments</span>
+</div>
+<span class="text-secondary-fixed font-bold text-body-sm">Harian</span>
+</div>
+<div>
+<p class="text-on-primary/60 font-label-caps uppercase mb-1">Pendapatan Hari Ini</p>
+<h3 class="font-plusJakartaSans text-[24px] font-extrabold">Rp 4.250.000</h3>
+</div>
+</div>
+</div>
+<!-- Main Content Area -->
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-gutter">
+<!-- Sales Statistics Chart -->
+<div class="lg:col-span-2 bg-white rounded-xl border border-outline-variant/20 coffee-glow p-8">
+<div class="flex items-center justify-between mb-8">
+<h4 class="font-plusJakartaSans text-title-md text-primary">Statistik Penjualan</h4>
+<select class="bg-surface-container-low border-none rounded-lg text-body-sm font-plusJakartaSans focus:ring-secondary cursor-pointer">
+<option>7 Hari Terakhir</option>
+<option>30 Hari Terakhir</option>
+<option>Tahun Ini</option>
+</select>
+</div>
+<!-- Mock Chart Visualization -->
+<div class="relative h-[300px] w-full flex items-end justify-between gap-2 pt-10">
+<!-- Grid Lines -->
+<div class="absolute inset-0 flex flex-col justify-between border-b border-outline-variant/20 pointer-events-none">
+<div class="w-full border-t border-outline-variant/10"></div>
+<div class="w-full border-t border-outline-variant/10"></div>
+<div class="w-full border-t border-outline-variant/10"></div>
+<div class="w-full border-t border-outline-variant/10"></div>
+</div>
+<!-- Bars -->
+<div class="flex-1 bg-surface-container-high rounded-t-lg h-[40%] transition-all hover:bg-secondary-container group relative">
+<div class="absolute -top-10 left-1/2 -translate-x-1/2 bg-primary text-white text-[10px] px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity">Sen</div>
+</div>
+<div class="flex-1 bg-surface-container-high rounded-t-lg h-[65%] transition-all hover:bg-secondary-container group relative">
+<div class="absolute -top-10 left-1/2 -translate-x-1/2 bg-primary text-white text-[10px] px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity">Sel</div>
+</div>
+<div class="flex-1 bg-secondary rounded-t-lg h-[85%] group relative">
+<div class="absolute -top-10 left-1/2 -translate-x-1/2 bg-primary text-white text-[10px] px-2 py-1 rounded opacity-100">Rab</div>
+</div>
+<div class="flex-1 bg-surface-container-high rounded-t-lg h-[55%] transition-all hover:bg-secondary-container group relative">
+<div class="absolute -top-10 left-1/2 -translate-x-1/2 bg-primary text-white text-[10px] px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity">Kam</div>
+</div>
+<div class="flex-1 bg-surface-container-high rounded-t-lg h-[70%] transition-all hover:bg-secondary-container group relative">
+<div class="absolute -top-10 left-1/2 -translate-x-1/2 bg-primary text-white text-[10px] px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity">Jum</div>
+</div>
+<div class="flex-1 bg-surface-container-high rounded-t-lg h-[95%] transition-all hover:bg-secondary-container group relative">
+<div class="absolute -top-10 left-1/2 -translate-x-1/2 bg-primary text-white text-[10px] px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity">Sab</div>
+</div>
+<div class="flex-1 bg-surface-container-high rounded-t-lg h-[80%] transition-all hover:bg-secondary-container group relative">
+<div class="absolute -top-10 left-1/2 -translate-x-1/2 bg-primary text-white text-[10px] px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity">Min</div>
+</div>
+</div>
+</div>
+<!-- Promo Terbaru -->
+<div class="bg-white rounded-xl border border-outline-variant/20 coffee-glow overflow-hidden flex flex-col">
+<div class="p-6 border-b border-outline-variant/10">
+<h4 class="font-plusJakartaSans text-title-md text-primary">Promo Terbaru</h4>
+</div>
+<div class="p-6 space-y-4 flex-1">
+<div class="relative rounded-lg overflow-hidden h-40 group">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="A top-down artistic shot of three different artisanal coffee drinks—a latte with detailed leaf art, a dark espresso, and an iced coffee—on a rustic dark wooden table. Soft warm sunlight creates beautiful highlights on the ceramic cups and glass. The scene is elegant and peaceful, highlighting the textures of the wood and the creaminess of the coffee foam." src="https://lh3.googleusercontent.com/aida-public/AB6AXuACliNcGRO2fCQHwpr8Yx3WqcaMIPcq1wznFV2-gks8yMkVwgHlz6jNctt3KT87BSo9hNEpOXnnHyGpqb3rVdV57jTs3buVRdjVBdNVjcd1dB1evy0iKnIsQgZJfNmQ6P362ny2Tbwwfhf4ijTUo6ybmaadXkMAcd79w-0P1QrrQUYpgJ5XsvPEi2k5evENATSi0Q6Igr0xwHNnP7BplB2164VrIq7u1tofH6Rk-AqMh4f4sX6ZsfwFDdl8Fb1gKf5Khdm_bbADeEXN"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/80 to-transparent flex items-end p-4">
+<div>
+<span class="bg-secondary-container text-on-secondary-container text-[10px] font-bold px-2 py-1 rounded mb-2 inline-block">AKTIF</span>
+<p class="text-white font-bold text-body-sm leading-tight">Beli 1 Gratis 1 Latte Setiap Senin</p>
+</div>
+</div>
+</div>
+<div class="space-y-3">
+<div class="flex items-center justify-between py-2 border-b border-outline-variant/10">
+<div>
+<p class="text-body-sm font-bold text-primary">Diskon Pelajar</p>
+<p class="text-[11px] text-on-surface-variant">Berakhir dalam 3 hari</p>
+</div>
+<span class="material-symbols-outlined text-secondary" data-icon="edit">edit</span>
+</div>
+<div class="flex items-center justify-between py-2 border-b border-outline-variant/10">
+<div>
+<p class="text-body-sm font-bold text-primary">Member Gold Rewards</p>
+<p class="text-[11px] text-on-surface-variant">Bonus poin 2x lipat</p>
+</div>
+<span class="material-symbols-outlined text-secondary" data-icon="edit">edit</span>
+</div>
+</div>
+</div>
+<div class="p-6 bg-surface-container-low">
+<button class="w-full py-2 border border-secondary text-secondary font-bold rounded-lg hover:bg-secondary/5 transition-all text-body-sm">
+                        Kelola Semua Promo
+                    </button>
+</div>
+</div>
+</div>
+<!-- Activity Feed Section -->
+<section class="mt-10">
+<div class="bg-white rounded-xl border border-outline-variant/20 coffee-glow overflow-hidden">
+<div class="p-6 border-b border-outline-variant/10 flex items-center justify-between">
+<h4 class="font-plusJakartaSans text-title-md text-primary">Aktivitas Terbaru</h4>
+<a class="text-secondary font-bold text-body-sm hover:underline" href="#">Lihat Semua</a>
+</div>
+<div class="divide-y divide-outline-variant/10">
+<!-- Activity Item 1 -->
+<div class="p-6 flex items-center justify-between hover:bg-surface-container-low transition-all">
+<div class="flex items-center gap-4">
+<div class="w-10 h-10 rounded-full bg-primary-container flex items-center justify-center text-white">
+<span class="material-symbols-outlined text-[20px]" data-icon="shopping_cart">shopping_cart</span>
+</div>
+<div>
+<p class="text-body-sm font-bold text-primary">Pesanan #JKT-8820 Diselesaikan</p>
+<p class="text-[12px] text-on-surface-variant">Oleh Kasir Sarah • 2 menit yang lalu</p>
+</div>
+</div>
+<p class="font-plusJakartaSans font-bold text-primary">Rp 145.000</p>
+</div>
+<!-- Activity Item 2 -->
+<div class="p-6 flex items-center justify-between hover:bg-surface-container-low transition-all">
+<div class="flex items-center gap-4">
+<div class="w-10 h-10 rounded-full bg-secondary-container flex items-center justify-center text-on-secondary-container">
+<span class="material-symbols-outlined text-[20px]" data-icon="person_add">person_add</span>
+</div>
+<div>
+<p class="text-body-sm font-bold text-primary">Pendaftaran Member Baru</p>
+<p class="text-[12px] text-on-surface-variant">Budi Santoso • 15 menit yang lalu</p>
+</div>
+</div>
+<span class="bg-tertiary-fixed text-on-tertiary-fixed px-3 py-1 rounded-full text-[10px] font-bold">GOLD MEMBER</span>
+</div>
+<!-- Activity Item 3 -->
+<div class="p-6 flex items-center justify-between hover:bg-surface-container-low transition-all">
+<div class="flex items-center gap-4">
+<div class="w-10 h-10 rounded-full bg-outline-variant/20 flex items-center justify-center text-on-surface-variant">
+<span class="material-symbols-outlined text-[20px]" data-icon="inventory">inventory</span>
+</div>
+<div>
+<p class="text-body-sm font-bold text-primary">Stok Biji Kopi Gayo Menipis</p>
+<p class="text-[12px] text-on-surface-variant">Peringatan Sistem • 1 jam yang lalu</p>
+</div>
+</div>
+<button class="text-secondary font-bold text-[12px] px-3 py-1 border border-secondary rounded-full">Re-order</button>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer (Authority Source: JSON) -->
+<footer class="md:hidden fixed bottom-0 left-0 w-full bg-primary dark:bg-surface-container-highest border-t border-secondary/20 shadow-lg z-50 flex justify-around items-center py-4 px-margin-mobile">
+<a class="flex flex-col items-center gap-1 text-secondary-fixed" href="#">
+<span class="material-symbols-outlined" data-icon="dashboard">dashboard</span>
+<span class="font-plusJakartaSans text-[10px]">Home</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-on-primary/60" href="#">
+<span class="material-symbols-outlined" data-icon="shopping_cart">shopping_cart</span>
+<span class="font-plusJakartaSans text-[10px]">Orders</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-on-primary/60" href="#">
+<span class="material-symbols-outlined" data-icon="analytics">analytics</span>
+<span class="font-plusJakartaSans text-[10px]">Stats</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-on-primary/60" href="#">
+<span class="material-symbols-outlined" data-icon="group">group</span>
+<span class="font-plusJakartaSans text-[10px]">Users</span>
+</a>
+</footer>
+</body></html>

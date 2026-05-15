@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+
+<html class="light" lang="id"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700&amp;family=EB+Garamond:wght@600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "surface-container-high": "#eae8e4",
+                    "on-secondary-fixed-variant": "#574500",
+                    "on-primary-fixed-variant": "#5b403c",
+                    "on-tertiary-fixed-variant": "#76320f",
+                    "surface-tint": "#745853",
+                    "primary-fixed": "#ffdad4",
+                    "surface-container-highest": "#e4e2de",
+                    "inverse-surface": "#30312e",
+                    "on-surface-variant": "#504442",
+                    "on-primary": "#ffffff",
+                    "on-background": "#1b1c1a",
+                    "tertiary": "#300d00",
+                    "tertiary-fixed-dim": "#ffb596",
+                    "secondary-fixed": "#ffe088",
+                    "on-error-container": "#93000a",
+                    "surface-container-lowest": "#ffffff",
+                    "primary": "#271310",
+                    "background": "#fbf9f5",
+                    "secondary": "#735c00",
+                    "tertiary-fixed": "#ffdbcd",
+                    "primary-fixed-dim": "#e3beb8",
+                    "secondary-container": "#fed65b",
+                    "on-error": "#ffffff",
+                    "surface-dim": "#dbdad6",
+                    "outline-variant": "#d3c3c0",
+                    "primary-container": "#3e2723",
+                    "outline": "#827472",
+                    "on-tertiary": "#ffffff",
+                    "surface": "#fbf9f5",
+                    "on-secondary": "#ffffff",
+                    "surface-bright": "#fbf9f5",
+                    "secondary-fixed-dim": "#e9c349",
+                    "on-secondary-fixed": "#241a00",
+                    "on-primary-container": "#ae8d87",
+                    "error-container": "#ffdad6",
+                    "inverse-on-surface": "#f2f0ed",
+                    "error": "#ba1a1a",
+                    "surface-container": "#efeeea",
+                    "on-tertiary-fixed": "#360f00",
+                    "surface-container-low": "#f5f3ef",
+                    "on-secondary-container": "#745c00",
+                    "on-surface": "#1b1c1a",
+                    "inverse-primary": "#e3beb8",
+                    "tertiary-container": "#521b00",
+                    "on-tertiary-container": "#d67d54",
+                    "surface-variant": "#e4e2de",
+                    "on-primary-fixed": "#2b1613"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "margin-desktop": "40px",
+                    "container-max-width": "1200px",
+                    "base": "8px",
+                    "gutter": "24px",
+                    "margin-mobile": "16px"
+            },
+            "fontFamily": {
+                    "plusJakartaSans": ["Plus Jakarta Sans", "sans-serif"],
+                    "ebGaramond": ["EB Garamond", "serif"],
+                    "title-md": ["Plus Jakarta Sans", "sans-serif"],
+                    "headline-lg": ["EB Garamond", "serif"],
+                    "headline-lg-mobile": ["EB Garamond", "serif"],
+                    "display-lg": ["EB Garamond", "serif"],
+                    "label-caps": ["Plus Jakarta Sans", "sans-serif"],
+                    "body-lg": ["Plus Jakarta Sans", "sans-serif"],
+                    "body-sm": ["Plus Jakarta Sans", "sans-serif"]
+            },
+            "fontSize": {
+                    "title-md": ["20px", {"lineHeight": "1.4", "fontWeight": "600"}],
+                    "headline-lg": ["32px", {"lineHeight": "1.2", "fontWeight": "600"}],
+                    "headline-lg-mobile": ["28px", {"lineHeight": "1.2", "fontWeight": "600"}],
+                    "display-lg": ["48px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "600"}],
+                    "label-caps": ["12px", {"lineHeight": "1", "letterSpacing": "0.05em", "fontWeight": "700"}],
+                    "body-lg": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "body-sm": ["14px", {"lineHeight": "1.5", "fontWeight": "400"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .coffee-glow {
+            box-shadow: 0 16px 32px -8px rgba(62, 39, 35, 0.12);
+        }
+        .glass-nav {
+            backdrop-filter: blur(10px);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-surface font-body-lg overflow-x-hidden">
+<!-- TopNavBar -->
+<nav class="sticky top-0 z-50 flex justify-between items-center px-margin-mobile md:px-margin-desktop py-4 w-full max-w-container-max-width mx-auto bg-surface/80 dark:bg-surface-container-highest/80 backdrop-blur-md border-b border-outline-variant/20 shadow-sm">
+<div class="font-ebGaramond text-headline-lg font-semibold text-primary dark:text-primary-fixed">Toko Kopi Jaya</div>
+<div class="hidden md:flex items-center gap-8">
+<a class="font-plusJakartaSans text-body-lg text-on-surface-variant hover:text-primary transition-colors" href="../menu_toko_kopi_jaya/code.html">Menu</a>
+<a class="font-plusJakartaSans text-body-lg text-on-surface-variant hover:text-primary transition-colors" href="../reservasi_toko_kopi_jaya/code.html">Reservasi</a>
+<a class="font-plusJakartaSans text-body-lg text-primary font-bold border-b-2 border-secondary" href="../tentang_kami_toko_kopi_jaya/code.html">Tentang Kami</a>
+<a class="font-plusJakartaSans text-body-lg text-on-surface-variant hover:text-primary transition-colors" href="../galeri_kontak_toko_kopi_jaya/code.html">Lokasi</a>
+</div>
+<div class="flex items-center gap-4">
+<div class="hidden md:block relative">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-on-surface-variant">search</span>
+<input class="pl-10 pr-4 py-2 rounded-full bg-surface-container border-none focus:ring-2 focus:ring-secondary text-body-sm w-48" placeholder="Cari..." type="text"/>
+</div>
+<a href="../pemesanan_online_tahap_1_3_toko_kopi_jaya/code.html" class="bg-primary-container text-on-primary-container px-6 py-2 rounded-full font-plusJakartaSans text-body-sm font-semibold active:scale-95 duration-200 hover:bg-primary transition-all inline-block">Pesan Sekarang</a>
+</div>
+</nav>
+<main>
+<!-- Section 1: Hero -->
+<section class="relative w-full min-h-[819px] flex items-center pt-12 pb-24 px-margin-mobile md:px-margin-desktop overflow-hidden">
+<div class="max-w-container-max-width mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+<div class="z-10 order-2 md:order-1">
+<span class="font-label-caps text-secondary tracking-widest uppercase mb-4 block">Sejak 1982</span>
+<h1 class="font-display-lg text-primary mb-6">Warisan Rasa dalam Setiap Seduhan</h1>
+<p class="text-body-lg text-on-surface-variant mb-8 leading-relaxed max-w-lg">
+                        Berawal dari sebuah kedai kecil di sudut kota, Toko Kopi Jaya lahir dari kecintaan mendalam terhadap biji kopi nusantara. Kami percaya bahwa setiap cangkir kopi adalah medium untuk berbagi kehangatan dan cerita.
+                    </p>
+<div class="flex gap-4">
+<div class="p-4 bg-surface-container-low border border-outline-variant/30 rounded-xl coffee-glow">
+<p class="font-headline-lg text-primary">40+</p>
+<p class="font-label-caps text-on-surface-variant">Tahun Pengalaman</p>
+</div>
+<div class="p-4 bg-surface-container-low border border-outline-variant/30 rounded-xl coffee-glow">
+<p class="font-headline-lg text-primary">12</p>
+<p class="font-label-caps text-on-surface-variant">Petani Lokal</p>
+</div>
+</div>
+</div>
+<div class="relative order-1 md:order-2">
+<div class="relative z-10 rounded-2xl overflow-hidden coffee-glow aspect-[4/5] border border-secondary/20">
+<img class="w-full h-full object-cover" data-alt="A cinematic, high-end interior shot of a boutique Indonesian cafe during sunset. Warm, golden sunlight streams through large windows, illuminating swirling coffee steam and polished dark wood furniture. The atmosphere is sophisticated yet cozy, with rich espresso tones and soft cream walls. A vintage espresso machine gleams in the background, surrounded by artisanal ceramic cups." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBmmXXqA1qANT_0hWUn_vgQmvVhq_pvBqS714v4jn9hE6j4mkkfwAuQQ69tRZ2scY7uh0BHcWrtcwoBIvDfxH33HYubwPPZkcbmBvWTIEJOzGP7biEJG4B09RMj4oZVhXctPynqW8qN0GH5TEm6DqnZeRqoKNKsnn4Ijfv438YUqg38MYgepF16g_Te-ansIZmEx7iCefvRzzmm39Jpsjy-6xAT2k7P1ZxieiSq_hCQPQVNKJ-aATWTD9GLkMoQJyIk8pUbBEwrLcKb"/>
+</div>
+<div class="absolute -bottom-8 -left-8 w-64 h-64 bg-secondary-container/20 rounded-full blur-3xl -z-10"></div>
+</div>
+</div>
+</section>
+<!-- Section 2: Filosofi -->
+<section class="bg-primary-container text-on-primary py-24 px-margin-mobile md:px-margin-desktop relative overflow-hidden">
+<div class="max-w-container-max-width mx-auto text-center relative z-10">
+<div class="inline-block px-4 py-1 rounded-full border border-on-primary-container/30 font-label-caps text-on-primary-container mb-6">Filosofi Kami</div>
+<h2 class="font-display-lg text-on-primary mb-12">Kehangatan yang Elegan</h2>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+<div class="flex flex-col items-center">
+<span class="material-symbols-outlined text-secondary-fixed text-5xl mb-4">temp_preferences_custom</span>
+<h3 class="font-title-md mb-4 text-secondary-fixed">Kualitas Tanpa Kompromi</h3>
+<p class="text-body-sm text-on-primary-container">Kami hanya memilih biji kopi grade tertinggi, dipanggang dengan presisi untuk mengeluarkan profil rasa yang optimal.</p>
+</div>
+<div class="flex flex-col items-center">
+<span class="material-symbols-outlined text-secondary-fixed text-5xl mb-4">handshake</span>
+<h3 class="font-title-md mb-4 text-secondary-fixed">Kemitraan Adil</h3>
+<p class="text-body-sm text-on-primary-container">Bekerja langsung dengan petani lokal untuk memastikan keberlanjutan dan kesejahteraan komunitas kopi Indonesia.</p>
+</div>
+<div class="flex flex-col items-center">
+<span class="material-symbols-outlined text-secondary-fixed text-5xl mb-4">workspace_premium</span>
+<h3 class="font-title-md mb-4 text-secondary-fixed">Seni Penyajian</h3>
+<p class="text-body-sm text-on-primary-container">Setiap cangkir adalah karya seni, disiapkan oleh barista berpengalaman dengan penuh perhatian dan ketelitian.</p>
+</div>
+</div>
+</div>
+<!-- Decorative element -->
+<div class="absolute top-0 right-0 opacity-10 pointer-events-none">
+<span class="material-symbols-outlined text-[400px]">coffee</span>
+</div>
+</section>
+<!-- Section 3: Visi & Misi -->
+<section class="py-24 px-margin-mobile md:px-margin-desktop bg-surface">
+<div class="max-w-container-max-width mx-auto flex flex-col md:flex-row gap-16 items-start">
+<div class="md:w-1/3">
+<h2 class="font-headline-lg text-primary mb-6">Masa Depan Kopi Nusantara</h2>
+<p class="text-on-surface-variant">Menjadi jembatan antara tradisi kopi yang kaya dan gaya hidup modern yang dinamis.</p>
+</div>
+<div class="md:w-2/3 grid grid-cols-1 sm:grid-cols-2 gap-8">
+<div class="p-8 bg-white border border-outline-variant/20 rounded-2xl coffee-glow group hover:-translate-y-2 transition-all">
+<div class="w-12 h-12 bg-secondary-container rounded-lg flex items-center justify-center mb-6">
+<span class="material-symbols-outlined text-on-secondary-container">visibility</span>
+</div>
+<h4 class="font-title-md text-primary mb-4">Visi</h4>
+<p class="text-body-sm text-on-surface-variant">Menjadi destinasi kopi premium utama yang mendefinisikan standar baru keramahtamahan Indonesia di mata dunia.</p>
+</div>
+<div class="p-8 bg-white border border-outline-variant/20 rounded-2xl coffee-glow group hover:-translate-y-2 transition-all">
+<div class="w-12 h-12 bg-secondary-container rounded-lg flex items-center justify-center mb-6">
+<span class="material-symbols-outlined text-on-secondary-container">rocket_launch</span>
+</div>
+<h4 class="font-title-md text-primary mb-4">Misi</h4>
+<ul class="text-body-sm text-on-surface-variant space-y-3">
+<li class="flex gap-2"><span class="text-secondary font-bold">•</span> Konsisten dalam inovasi rasa.</li>
+<li class="flex gap-2"><span class="text-secondary font-bold">•</span> Mengedukasi penikmat kopi.</li>
+<li class="flex gap-2"><span class="text-secondary font-bold">•</span> Ruang nyaman untuk berkreasi.</li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 4: Tim Barista -->
+<section class="py-24 px-margin-mobile md:px-margin-desktop bg-surface-container-low">
+<div class="max-w-container-max-width mx-auto">
+<div class="text-center mb-16">
+<span class="font-label-caps text-secondary tracking-widest uppercase mb-4 block">Wajah di Balik Bar</span>
+<h2 class="font-display-lg text-primary">Keluarga Jaya</h2>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+<!-- Barista 1 -->
+<div class="group">
+<div class="relative overflow-hidden rounded-2xl aspect-[3/4] mb-4 coffee-glow border border-outline-variant/10">
+<img class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500 scale-100 group-hover:scale-110" data-alt="A professional male barista in a premium dark leather apron, carefully pouring latte art into a ceramic cup. The background is a blurred high-end coffee shop with warm ambient lighting and metallic espresso equipment. The style is minimalist and elegant with a warm, earthy color palette of deep browns and gold accents." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAoKScMMC6ZvKMCvG9Q5F5SpPT1BZrzBaDzBd1gV05mfhcVlHqs2bNO5V1QnvS4N8bfHGMd3tV8Xr48-BgjW2lsiSdQVUlxoRcjODOSYuCGQBBd53j3GBQXUCbeHlnx_yeyFrCmnJqW-tdwsDqxSbebLuq_MDwtbUDn7QMej3qBpUSJ9Ohj3KEcwjPAVZKLCSF5is61VUFOFCQxMaM6I8D_wdnlNAOaRLYEbDV2drRjkCGoob6_KGo4OjgZW6Dm09WRZE5VOx25U_K7"/>
+<div class="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-primary/80 to-transparent">
+<p class="text-white font-title-md">Budi Santoso</p>
+<p class="text-secondary-fixed text-xs font-label-caps">Head Barista</p>
+</div>
+</div>
+</div>
+<!-- Barista 2 -->
+<div class="group">
+<div class="relative overflow-hidden rounded-2xl aspect-[3/4] mb-4 coffee-glow border border-outline-variant/10">
+<img class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500 scale-100 group-hover:scale-110" data-alt="A professional female barista smiling warmly in a minimalist modern cafe setting. She is wearing a dark barista uniform and standing next to a sleek, chrome espresso machine. Soft morning light creates a bright, airy feel with elegant cream and espresso color tones. The image conveys premium service and professional friendliness." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCIsm5APXbIzQYawn0U-FKqEL2KB33hMkz4bLUlkvpCMAHVeJBqZ2lhpcczakGIINvskDrQNDfR30IUvySTpTohlof4nUMs2AwWNdWU8xSvzRdRDqR4iGWWk9OHoHjM9tAHulCEulGEQDf_Ct59o5LNeekQ5lJVJ48FiQu-7TEiHLZcO0bMpdOiI5kgDqSI9xdyA-LLDkXyIDqEAqZuACok9b6hV17pOS5XEI4CVgbpckHkyzDbXTW6-3TrXg2XCKsizANn82jo-8ze"/>
+<div class="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-primary/80 to-transparent">
+<p class="text-white font-title-md">Siti Aminah</p>
+<p class="text-secondary-fixed text-xs font-label-caps">Roaster Master</p>
+</div>
+</div>
+</div>
+<!-- Barista 3 -->
+<div class="group">
+<div class="relative overflow-hidden rounded-2xl aspect-[3/4] mb-4 coffee-glow border border-outline-variant/10">
+<img class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500 scale-100 group-hover:scale-110" data-alt="A close-up portrait of a senior coffee expert with a kind expression, wearing a traditional yet modern apron. He is holding a handful of roasted coffee beans in a sun-drenched, rustic-modern cafe environment. The aesthetic is sophisticated with warm lighting, wood textures, and a golden-brown color palette." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAYzVFusWy3T-EBZFINkNLsyUtTZSqOvwyxexyktYMVfWJKOZKIYCH2U7kN7cifBG7bGpXbyIldz_pkzYttJ4bjPIX4ns67nN2OZBFeQd9GnkdW74_2LcDtmmuaSZeseiP_gSd8nXFckVwGjO1ZEx_LkniXNeMlAeZ2XwZIae4BAcglgXEwUQCK50CTDtOas7nWzxgM_rV3KfHj_M6eIWXdR-seQHWMKyGoSt1iRwJwzw9RWwZSukQterSbkFvUFYySuphbFt8fOzES"/>
+<div class="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-primary/80 to-transparent">
+<p class="text-white font-title-md">Agus Wijaya</p>
+<p class="text-secondary-fixed text-xs font-label-caps">Founder &amp; Q-Grader</p>
+</div>
+</div>
+</div>
+<!-- Barista 4 -->
+<div class="group">
+<div class="relative overflow-hidden rounded-2xl aspect-[3/4] mb-4 coffee-glow border border-outline-variant/10">
+<img class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500 scale-100 group-hover:scale-110" data-alt="A young, trendy male barista in a minimalist cafe, focused on tamping coffee grounds. The setting features clean lines, white marble counters, and warm wooden accents. The lighting is soft and professional, highlighting the high-quality textures of the coffee and equipment. The overall tone is elegant, modern, and warm." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD5fP77TPPM5HHoHYrNCH1y2oGN5exRiexPmPxrneEllY8kw0qO4oSb-529Z-ejzOaTsgW3dv0Ul__h4OIGraZKLzrOkXk7Q_Uo-TeYbt57FLpaQ31Xf5RdF8LDodX_1_TPBaBrd9jzJrtmh4KVnLxhBcDVtgcnItaNWlCR2Ptew__bMJ73AiQgBTtUQfORb7ac5XYWmJgQ5sNGHgwggIaoQQnqkCWnuotSCXu4ng3MqHYuAOiXhL2XgSJsjYwA7UI9hwkGEdmt0xHl"/>
+<div class="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-primary/80 to-transparent">
+<p class="text-white font-title-md">Rian Pratama</p>
+<p class="text-secondary-fixed text-xs font-label-caps">Senior Barista</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 5: Budaya Pelayanan -->
+<section class="py-24 px-margin-mobile md:px-margin-desktop bg-white">
+<div class="max-w-container-max-width mx-auto flex flex-col md:flex-row items-center gap-12">
+<div class="md:w-1/2 relative">
+<div class="p-12 bg-surface-container rounded-3xl border border-outline-variant/20 coffee-glow">
+<span class="material-symbols-outlined text-secondary text-6xl mb-6">spa</span>
+<h2 class="font-headline-lg text-primary mb-6">Lebih dari Sekedar Layanan</h2>
+<p class="text-body-lg text-on-surface-variant mb-6 leading-relaxed">
+                            Di Jaya, kami tidak hanya menyajikan kopi; kami menyediakan ruang untuk jeda. Budaya pelayanan kami berakar pada nilai <strong>"Nyaman Seperti di Rumah, Berkelas Seperti di Galeri"</strong>.
+                        </p>
+<p class="text-body-lg text-on-surface-variant">
+                            Setiap barista dilatih untuk mengenali preferensi Anda, menciptakan pengalaman personal yang membuat setiap kunjungan terasa istimewa.
+                        </p>
+</div>
+</div>
+<div class="md:w-1/2 grid grid-cols-2 gap-4">
+<img class="w-full h-48 object-cover rounded-2xl coffee-glow" data-alt="A cozy, high-end seating area in a boutique cafe. Plush armchairs sit next to a large window with soft sunlight. Minimalist coffee tables hold artisanal cups. The design is elegant with warm wood, soft cream fabrics, and subtle golden decor accents. The atmosphere is quiet, sophisticated, and peaceful." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCfZmSLVshW3vnQ63RJiU8J5Sz5VwZcqnG7NYnhnxIe47D4g_eG9fwOB5HCvJDW_X1TrjHPYrm54dtoCbmdG4z6t6vJLHuAr5N2SeN08rjin9ZSBi88fZ7767levDieSA-C5WJzS1F_bQPWO5TrT7CGFjMPh53vXmvx18jIdC_VfpPZy-zJjjmQlc5Kp2XNQvgxsBouRNmTJ-az39tntpaBe2_mzpfdHzxEtsC0TtD7MSPgjt1EKaPefp7nrz1EByF5kGT11nWYsAU2"/>
+<img class="w-full h-48 object-cover rounded-2xl coffee-glow mt-8" data-alt="A high-quality close-up of hands pouring hot water from a stylish copper kettle over a coffee dripper. The background is a clean, minimalist wooden counter. Steam rises gracefully in the warm, focused lighting. The color palette features rich metallic gold, warm browns, and pristine whites, emphasizing a premium tactile experience." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBh8lg6JHw3HK9tq8D7A66ClURV9PVoHMAYgu_jZcvYI2VPvgamXuhjGYN7aYHMLiaELMRLYlpvtl8FlWPOvHIUghNr4EdNnSOk3nje1mhK6IR1yhTe_VisINnf5gBoYJFGnZOSNiK5wxhRRNuWBvGWxK7CmIIf3BCNLj7uZu-Qi7P9ffmNIZHy76y8YytLctNeo3AQb3s2TpoTb9O0JnrSRdvePxIvoVjfEzLODdluq1jBbCZ1MCuSGsS6dv9E1xvaPGD-zOvzZvlY"/>
+<img class="w-full h-48 object-cover rounded-2xl coffee-glow -mt-8" data-alt="An atmospheric wide shot of a bustling yet calm boutique coffee house. Guests are seated at minimalist tables, focused on laptops or quiet conversations. The interior is a blend of rustic wood beams and modern glass architecture. Warm, sun-drenched lighting fills the space, creating a premium light-mode aesthetic with espresso and cream tones." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAbglgoahmkgBdq9NB3BCktxy87ldM7NYCOYulJIOXNiWKwNJJOsis5fPlnoDvxUgVtsAW6zWwczpJq5PcGkbiXWSiTUEjRn0Xb1Ji4Eiwbpfworg5fzJBhTUU3UlJ--XlDBLefRWmu1kCv49DE4JevpJNiY89-vmVl9rJaeQSv3EAU8mLDGXD2R9lbXn_ufbK3A1mzZ_8R_JjxvfNfFgPiymf7dzlyGC07Ey0D9dUiM--C17EeEcX8HfJkR5lQ9cbM8fKAFZYxxLkl"/>
+<img class="w-full h-48 object-cover rounded-2xl coffee-glow" data-alt="Artisanal coffee equipment arranged on a minimalist white shelf. Includes a manual grinder, a ceramic dripper, and a small plant in a terracotta pot. The scene is bright and airy with high-key lighting and a sophisticated palette of earth tones. It represents the careful attention to detail and quality at the cafe." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDDvLhHKyF8RbzBNvgqevgnpaFlBvnnXxR6OvxhSti_IzfZFGCRxD2n8_1AV4OvE769SGjRVyRMdjYpwC2p79vyOle7-pA5cnTGlgv9kZQLATrJ4bAxdzor8ekGGhU65oHFWq3YE4u0SwsVNeMwSf4kcmGFdFo_7m3HAAfmUeQKGmrvO8AqMPHc4WjnJUxSaY5WTg27KUXn0HUqTIRSqt_gc1_tMaPtKFM5eHCAkMHDuuOQgiEuLTF971JaIkXNMayRulLMgd1xBg1D"/>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full px-margin-mobile md:px-margin-desktop py-12 flex flex-col md:flex-row justify-between items-center gap-8 bg-primary dark:bg-surface-container-highest border-t border-secondary/20">
+<div class="flex flex-col items-center md:items-start gap-4">
+<div class="font-ebGaramond text-headline-lg text-secondary-fixed">Toko Kopi Jaya</div>
+<p class="font-plusJakartaSans text-body-sm text-on-primary/60 max-w-xs text-center md:text-left">
+                © 2024 Toko Kopi Jaya. Kehangatan yang Elegan di Setiap Cangkir.
+            </p>
+</div>
+<div class="flex gap-8">
+<a class="font-plusJakartaSans text-body-sm text-on-primary/60 hover:text-secondary-fixed transition-all hover:underline decoration-secondary-fixed underline-offset-4" href="#">Kebijakan Privasi</a>
+<a class="font-plusJakartaSans text-body-sm text-on-primary/60 hover:text-secondary-fixed transition-all hover:underline decoration-secondary-fixed underline-offset-4" href="#">Syarat &amp; Ketentuan</a>
+<a class="font-plusJakartaSans text-body-sm text-on-primary/60 hover:text-secondary-fixed transition-all hover:underline decoration-secondary-fixed underline-offset-4" href="#">Bantuan</a>
+<a class="font-plusJakartaSans text-body-sm text-on-primary/60 hover:text-secondary-fixed transition-all hover:underline decoration-secondary-fixed underline-offset-4" href="#">Karir</a>
+</div>
+<div class="flex gap-4">
+<a class="w-10 h-10 rounded-full border border-on-primary/20 flex items-center justify-center hover:bg-secondary-fixed hover:text-primary transition-all" href="#">
+<span class="material-symbols-outlined text-sm">public</span>
+</a>
+<a class="w-10 h-10 rounded-full border border-on-primary/20 flex items-center justify-center hover:bg-secondary-fixed hover:text-primary transition-all" href="#">
+<span class="material-symbols-outlined text-sm">share</span>
+</a>
+</div>
+</footer>
+</body></html>

@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+
+<html class="light" lang="id"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700&amp;family=EB+Garamond:wght@600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "surface-container-high": "#eae8e4",
+                    "on-secondary-fixed-variant": "#574500",
+                    "on-primary-fixed-variant": "#5b403c",
+                    "on-tertiary-fixed-variant": "#76320f",
+                    "surface-tint": "#745853",
+                    "primary-fixed": "#ffdad4",
+                    "surface-container-highest": "#e4e2de",
+                    "inverse-surface": "#30312e",
+                    "on-surface-variant": "#504442",
+                    "on-primary": "#ffffff",
+                    "on-background": "#1b1c1a",
+                    "tertiary": "#300d00",
+                    "tertiary-fixed-dim": "#ffb596",
+                    "secondary-fixed": "#ffe088",
+                    "on-error-container": "#93000a",
+                    "surface-container-lowest": "#ffffff",
+                    "primary": "#271310",
+                    "background": "#fbf9f5",
+                    "secondary": "#735c00",
+                    "tertiary-fixed": "#ffdbcd",
+                    "primary-fixed-dim": "#e3beb8",
+                    "secondary-container": "#fed65b",
+                    "on-error": "#ffffff",
+                    "surface-dim": "#dbdad6",
+                    "outline-variant": "#d3c3c0",
+                    "primary-container": "#3e2723",
+                    "outline": "#827472",
+                    "on-tertiary": "#ffffff",
+                    "surface": "#fbf9f5",
+                    "on-secondary": "#ffffff",
+                    "surface-bright": "#fbf9f5",
+                    "secondary-fixed-dim": "#e9c349",
+                    "on-secondary-fixed": "#241a00",
+                    "on-primary-container": "#ae8d87",
+                    "error-container": "#ffdad6",
+                    "inverse-on-surface": "#f2f0ed",
+                    "error": "#ba1a1a",
+                    "surface-container": "#efeeea",
+                    "on-tertiary-fixed": "#360f00",
+                    "surface-container-low": "#f5f3ef",
+                    "on-secondary-container": "#745c00",
+                    "on-surface": "#1b1c1a",
+                    "inverse-primary": "#e3beb8",
+                    "tertiary-container": "#521b00",
+                    "on-tertiary-container": "#d67d54",
+                    "surface-variant": "#e4e2de",
+                    "on-primary-fixed": "#2b1613"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "margin-desktop": "40px",
+                    "container-max-width": "1200px",
+                    "base": "8px",
+                    "gutter": "24px",
+                    "margin-mobile": "16px"
+            },
+            "fontFamily": {
+                    "plusJakartaSans": ["Plus Jakarta Sans", "sans-serif"],
+                    "ebGaramond": ["EB Garamond", "serif"],
+                    "title-md": ["Plus Jakarta Sans"],
+                    "headline-lg": ["EB Garamond"],
+                    "headline-lg-mobile": ["EB Garamond"],
+                    "display-lg": ["EB Garamond"],
+                    "label-caps": ["Plus Jakarta Sans"],
+                    "body-lg": ["Plus Jakarta Sans"],
+                    "body-sm": ["Plus Jakarta Sans"]
+            },
+            "fontSize": {
+                    "title-md": ["20px", {"lineHeight": "1.4", "fontWeight": "600"}],
+                    "headline-lg": ["32px", {"lineHeight": "1.2", "fontWeight": "600"}],
+                    "headline-lg-mobile": ["28px", {"lineHeight": "1.2", "fontWeight": "600"}],
+                    "display-lg": ["48px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "600"}],
+                    "label-caps": ["12px", {"lineHeight": "1", "letterSpacing": "0.05em", "fontWeight": "700"}],
+                    "body-lg": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "body-sm": ["14px", {"lineHeight": "1.5", "fontWeight": "400"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        body { font-family: 'Plus Jakarta Sans', sans-serif; background-color: #fbf9f5; }
+        .coffee-glow { box-shadow: 0 16px 32px -8px rgba(62, 39, 35, 0.12); }
+        .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+    </style>
+</head>
+<body class="bg-background text-on-surface flex min-h-screen items-center justify-center p-margin-mobile">
+<div class="grid w-full max-w-container-max-width grid-cols-1 md:grid-cols-2 bg-surface-container-lowest rounded-xl overflow-hidden coffee-glow border border-outline-variant/20">
+<div class="relative hidden md:flex flex-col justify-end p-margin-desktop min-h-[600px] overflow-hidden">
+<div class="absolute inset-0 bg-primary-container/40 z-10"></div>
+<img alt="Toko Kopi Jaya Ambience" class="absolute inset-0 w-full h-full object-cover" data-alt="A premium close-up of a rustic coffee bar setup with steam rising from a ceramic cup. The background features warm wood textures and golden morning light filtering through a window, creating a serene and professional atmosphere. The color palette is dominated by deep espresso browns, creamy whites, and subtle golden highlights to evoke an elegant warmth aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDloUE3FqLr9cC_R_AFdBJ99X_4fCaFVIPHtFFNGhS1STTdbzxfMEGukp02UbgnFqCE8Tw8BWvD-1A7L_ZGh1KNdKISDVayrSA2MFh1dxL4uNirH5SWTQ5Q9mbNk6PAFgvBRbvs_orbQK0V_1_Ul04k-2ihSUbW9NO1a3btVoxqfRVn-1Z-8Vn82C3ZP4GOKthU0dkvafcmKTM34kWDqKk8BynssfCP7ahwhTn16ttpfKcraZNi8uptpHgk-nlsOo8OMEMZsIf8ayz7"/>
+<div class="relative z-20">
+<h1 class="font-ebGaramond text-display-lg text-on-primary mb-2">Toko Kopi Jaya</h1>
+<p class="font-plusJakartaSans text-body-lg text-primary-fixed-dim max-w-md">Kehangatan yang Elegan di Setiap Cangkir. Kelola operasional harian Anda dengan presisi dan profesionalisme.</p>
+</div>
+</div>
+<div class="flex flex-col justify-center p-8 md:p-16 lg:p-24 bg-surface">
+<div class="mb-10 text-center md:text-left">
+<div class="md:hidden mb-6">
+<span class="font-ebGaramond text-headline-lg text-primary">Toko Kopi Jaya</span>
+</div>
+<h2 class="font-ebGaramond text-headline-lg text-primary mb-2">Login Admin</h2>
+<p class="font-plusJakartaSans text-body-sm text-on-surface-variant">Silakan masukkan kredensial Anda untuk mengakses dashboard manajemen.</p>
+</div>
+<form action="#" class="space-y-6" method="POST">
+<div class="space-y-1.5">
+<label class="font-label-caps text-label-caps text-on-surface-variant block" for="username">USERNAME</label>
+<div class="relative">
+<span class="material-symbols-outlined absolute left-0 top-1/2 -translate-y-1/2 text-outline">person</span>
+<input class="w-full bg-transparent border-0 border-b border-outline-variant py-3 pl-8 focus:ring-0 focus:border-secondary transition-all font-body-lg text-on-surface placeholder-outline/50" id="username" name="username" placeholder="admin.jaya" required="" type="text"/>
+</div>
+</div>
+<div class="space-y-1.5">
+<div class="flex justify-between items-center">
+<label class="font-label-caps text-label-caps text-on-surface-variant block" for="password">PASSWORD</label>
+<a class="font-plusJakartaSans text-body-sm text-secondary hover:underline underline-offset-4 decoration-secondary-fixed transition-all" href="#">Lupa sandi?</a>
+</div>
+<div class="relative">
+<span class="material-symbols-outlined absolute left-0 top-1/2 -translate-y-1/2 text-outline">lock</span>
+<input class="w-full bg-transparent border-0 border-b border-outline-variant py-3 pl-8 focus:ring-0 focus:border-secondary transition-all font-body-lg text-on-surface placeholder-outline/50" id="password" name="password" placeholder="••••••••" required="" type="password"/>
+</div>
+</div>
+<div class="flex items-center gap-3 py-2">
+<input class="w-4 h-4 rounded border-outline-variant text-primary focus:ring-primary/20 cursor-pointer" id="remember" name="remember" type="checkbox"/>
+<label class="font-plusJakartaSans text-body-sm text-on-surface-variant cursor-pointer select-none" for="remember">Ingat perangkat ini</label>
+</div>
+<div class="pt-4">
+<a href="../dashboard_admin_toko_kopi_jaya/code.html" class="w-full bg-primary-container text-on-primary py-4 px-6 rounded-lg font-plusJakartaSans text-title-md font-semibold coffee-glow hover:bg-primary transition-all active:scale-[0.98] duration-200 flex items-center justify-center gap-2">
+<span>Masuk ke Dashboard</span>
+<span class="material-symbols-outlined">login</span>
+</a>
+</div>
+</button>
+</div>
+</form>
+<div class="mt-12 pt-8 border-t border-outline-variant/20">
+<div class="flex flex-col sm:flex-row justify-between items-center gap-4">
+<p class="font-plusJakartaSans text-body-sm text-on-surface-variant/60">© 2024 Toko Kopi Jaya</p>
+<div class="flex gap-6">
+<a class="font-plusJakartaSans text-body-sm text-on-surface-variant/60 hover:text-primary transition-colors" href="#">Bantuan</a>
+<a class="font-plusJakartaSans text-body-sm text-on-surface-variant/60 hover:text-primary transition-colors" href="#">Keamanan</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</body></html>

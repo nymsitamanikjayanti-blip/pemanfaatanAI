@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+
+<html class="light" lang="id"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700&amp;family=EB+Garamond:wght@600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "surface-container-high": "#eae8e4",
+                    "on-secondary-fixed-variant": "#574500",
+                    "on-primary-fixed-variant": "#5b403c",
+                    "on-tertiary-fixed-variant": "#76320f",
+                    "surface-tint": "#745853",
+                    "primary-fixed": "#ffdad4",
+                    "surface-container-highest": "#e4e2de",
+                    "inverse-surface": "#30312e",
+                    "on-surface-variant": "#504442",
+                    "on-primary": "#ffffff",
+                    "on-background": "#1b1c1a",
+                    "tertiary": "#300d00",
+                    "tertiary-fixed-dim": "#ffb596",
+                    "secondary-fixed": "#ffe088",
+                    "on-error-container": "#93000a",
+                    "surface-container-lowest": "#ffffff",
+                    "primary": "#271310",
+                    "background": "#fbf9f5",
+                    "secondary": "#735c00",
+                    "tertiary-fixed": "#ffdbcd",
+                    "primary-fixed-dim": "#e3beb8",
+                    "secondary-container": "#fed65b",
+                    "on-error": "#ffffff",
+                    "surface-dim": "#dbdad6",
+                    "outline-variant": "#d3c3c0",
+                    "primary-container": "#3e2723",
+                    "outline": "#827472",
+                    "on-tertiary": "#ffffff",
+                    "surface": "#fbf9f5",
+                    "on-secondary": "#ffffff",
+                    "surface-bright": "#fbf9f5",
+                    "secondary-fixed-dim": "#e9c349",
+                    "on-secondary-fixed": "#241a00",
+                    "on-primary-container": "#ae8d87",
+                    "error-container": "#ffdad6",
+                    "inverse-on-surface": "#f2f0ed",
+                    "error": "#ba1a1a",
+                    "surface-container": "#efeeea",
+                    "on-tertiary-fixed": "#360f00",
+                    "surface-container-low": "#f5f3ef",
+                    "on-secondary-container": "#745c00",
+                    "on-surface": "#1b1c1a",
+                    "inverse-primary": "#e3beb8",
+                    "tertiary-container": "#521b00",
+                    "on-tertiary-container": "#d67d54",
+                    "surface-variant": "#e4e2de",
+                    "on-primary-fixed": "#2b1613"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "margin-desktop": "40px",
+                    "container-max-width": "1200px",
+                    "base": "8px",
+                    "gutter": "24px",
+                    "margin-mobile": "16px"
+            },
+            "fontFamily": {
+                    "plusJakartaSans": ["Plus Jakarta Sans", "sans-serif"],
+                    "ebGaramond": ["EB Garamond", "serif"],
+                    "title-md": ["Plus Jakarta Sans"],
+                    "headline-lg": ["EB Garamond"],
+                    "headline-lg-mobile": ["EB Garamond"],
+                    "display-lg": ["EB Garamond"],
+                    "label-caps": ["Plus Jakarta Sans"],
+                    "body-lg": ["Plus Jakarta Sans"],
+                    "body-sm": ["Plus Jakarta Sans"]
+            },
+            "fontSize": {
+                    "title-md": ["20px", {"lineHeight": "1.4", "fontWeight": "600"}],
+                    "headline-lg": ["32px", {"lineHeight": "1.2", "fontWeight": "600"}],
+                    "headline-lg-mobile": ["28px", {"lineHeight": "1.2", "fontWeight": "600"}],
+                    "display-lg": ["48px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "600"}],
+                    "label-caps": ["12px", {"lineHeight": "1", "letterSpacing": "0.05em", "fontWeight": "700"}],
+                    "body-lg": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "body-sm": ["14px", {"lineHeight": "1.5", "fontWeight": "400"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .coffee-glow {
+            box-shadow: 0 16px 32px rgba(62, 39, 35, 0.12);
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .gold-border {
+            border: 1px solid rgba(212, 175, 55, 0.2);
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface font-body-lg">
+<!-- Top Navigation Bar -->
+<nav class="sticky top-0 z-50 flex justify-between items-center px-margin-mobile md:px-margin-desktop py-4 w-full max-w-container-max-width mx-auto bg-surface/80 backdrop-blur-md border-b border-outline-variant/20 shadow-sm">
+<div class="font-ebGaramond text-headline-lg font-semibold text-primary">Toko Kopi Jaya</div>
+<div class="hidden md:flex items-center gap-8 font-plusJakartaSans text-body-lg">
+<a class="text-on-surface-variant hover:text-primary transition-colors" href="../menu_toko_kopi_jaya/code.html">Menu</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors" href="../reservasi_toko_kopi_jaya/code.html">Reservasi</a>
+<a class="text-primary font-bold border-b-2 border-secondary" href="../galeri_kontak_toko_kopi_jaya/code.html">Tentang Kami</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors" href="../galeri_kontak_toko_kopi_jaya/code.html">Lokasi</a>
+</div>
+<div class="flex items-center gap-4">
+<button class="material-symbols-outlined text-on-surface-variant p-2 hover:bg-surface-container-high/50 rounded-full transition-all active:scale-95">search</button>
+<a href="../pemesanan_online_tahap_1_3_toko_kopi_jaya/code.html" class="bg-primary-container text-on-primary-container px-6 py-2 rounded-full font-bold active:scale-95 duration-200 transition-all inline-block">Pesan Sekarang</a>
+<button class="md:hidden material-symbols-outlined text-on-surface-variant p-2">menu</button>
+</div>
+</nav>
+<main class="max-w-container-max-width mx-auto px-margin-mobile md:px-margin-desktop py-12">
+<!-- Header Section -->
+<header class="mb-16 text-center max-w-2xl mx-auto">
+<span class="font-label-caps text-label-caps text-secondary mb-4 block">KEHANGATAN YANG ELEGAN</span>
+<h1 class="font-display-lg text-display-lg text-primary mb-6">Momen Spesial di Setiap Sudut</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant">Jelajahi keindahan interior kami dan rasakan dedikasi kami dalam menyajikan kopi terbaik melalui galeri visual berikut.</p>
+</header>
+<!-- Gallery Section - Bento Grid Style -->
+<section class="grid grid-cols-1 md:grid-cols-4 gap-gutter mb-24">
+<!-- Large Main Image -->
+<div class="md:col-span-2 md:row-span-2 group relative overflow-hidden rounded-xl gold-border coffee-glow h-[500px]">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="A high-end boutique cafe interior featuring minimalist wooden furniture, warm golden lighting, and soft shadows. The atmosphere is sophisticated and quiet, with steam rising from a ceramic coffee cup in the foreground. Deep espresso tones and cream backgrounds create a luxurious, professional coffee culture aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAU6gf08Cg61KYgjpLT5PsX_9guVYDZIyguhBunu4ogmdiH1nY7JSG3QNcyeSRn51rymufFAKkTSg-ATy3DwmyGnX14HAgq1t7ymXAMQmK54xYj9qLfWone874aiebqKbCbaA4nG51F-3NNB2XfRudUKpNCWI6suBzIxn9iVtJ_00VnBrAk32V0DPDwv3hDdYU9AKQZ27jodryMiIOY04wjJkLsT4LrZ6iqX0MHeh35KzsOSgRuCI65kkkMiMoTod-_ifLWEsuQo5ic"/>
+<div class="absolute inset-0 bg-primary/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+<span class="material-symbols-outlined text-on-primary text-4xl">zoom_in</span>
+</div>
+</div>
+<!-- Grid Items -->
+<div class="group relative overflow-hidden rounded-xl gold-border coffee-glow h-[238px]">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="Close-up of a skilled barista carefully pouring frothed milk into a ceramic latte cup, creating intricate heart-shaped latte art. The lighting is warm and directional, highlighting the rich textures of the coffee crema and the elegant hand movements of the barista in a premium cafe setting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAKZoQNRijwK6DVbkT11DjfnSBL6a1ckJEYqolIGa-6SWxHp4Zg8d9aXDthgIFaJa9dlMNTAQbc8drW8h9bDsUwEBeOKabDhmfvjRXVtfUZ7voI0qU1bveo_i0kWFSY41DyxbYwB3SECQUprvlwNkRorjH5mIJjprn4FLzFQUW6muiT3oQQPmj45H9M2OoIHMZ_-dBqa1eVOgK3zRZS9hoBCdbW7ocNv0u4AyEzkVs16-Zybn2t1nuOuagvpDNriCRMVSOUkeH6bNQF"/>
+<div class="absolute inset-0 bg-primary/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+<span class="material-symbols-outlined text-on-primary text-4xl">play_circle</span>
+</div>
+</div>
+<div class="group relative overflow-hidden rounded-xl gold-border coffee-glow h-[238px]">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="An assortment of gourmet pastries and artisan bread arranged on a minimalist white countertop with a warm wooden background. The scene is illuminated by soft, natural sunlight from a nearby window, creating a serene and appetizing breakfast atmosphere in an upscale coffee house." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCxxLSMJzLLbOuQdfr8LuhNG4yEmi2tkecOli9loDHqo_I0p5qvzJ6H0vb71ggnNcEkpS4FaM7wgJgqoeH84ogw-OB19KE1EL8zMFsZJJQeWZF0Wsa2EehTiXmw2wMErLSmgITtcGRPt31HGWQdAzseeqSpQ4oe2SN55VTIxH92faBKZaA4AIyPFgDsJ-vsuHWrHGnlwgLWh6tX0RC-nUIwD9e0GoOfBKnUZqE4Qlbq8GKiZ3zVw6BkI9fvBy2Qg02QgAozL_-CnJLm"/>
+<div class="absolute inset-0 bg-primary/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+<span class="material-symbols-outlined text-on-primary text-4xl">zoom_in</span>
+</div>
+</div>
+<div class="md:col-span-2 group relative overflow-hidden rounded-xl gold-border coffee-glow h-[238px]">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="Wide shot of a modern, airy cafe workspace with students and professionals engaged in focused work. The design features floor-to-ceiling windows, high-end ergonomic seating, and plenty of breathing room between tables. The color palette is composed of warm creams, earthy browns, and golden accents." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDdpBATY_ZiSk2IXXyJp1RzQamGjWMkc0uU3zgdokDoF3J_dgHy63H2nCt3ZbjkdUJd5Eds0KZ87PH5xWW_v4cE_m4EJjFE-xxdcICnzLS2yH9-RSsqv4lDBztXCh_wADRBmHXR1ryUTNLUgvkQt6aW1ejUNpWe5WEehaeogqN5wrjf2uhtTEyWA88I0YHjesGRS44owQy3_qZ6m17F0S1k7E1jfFTt_m4SUyO1XH4Ncg2cPxNp76U76ahjDHCP21pZKL3Ja8KEnccm"/>
+<div class="absolute inset-0 bg-primary/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+<span class="material-symbols-outlined text-on-primary text-4xl">zoom_in</span>
+</div>
+</div>
+</section>
+<!-- Contact Section -->
+<section class="grid grid-cols-1 lg:grid-cols-12 gap-gutter items-start">
+<!-- Contact Details -->
+<div class="lg:col-span-5 space-y-8">
+<div>
+<h2 class="font-headline-lg text-headline-lg text-primary mb-4">Hubungi Kami</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant">Kami selalu terbuka untuk pertanyaan, saran, atau sekadar berbagi cerita tentang kopi favorit Anda.</p>
+</div>
+<div class="space-y-6">
+<div class="flex gap-4 items-start">
+<div class="bg-secondary-container p-3 rounded-xl flex items-center justify-center">
+<span class="material-symbols-outlined text-on-secondary-container">location_on</span>
+</div>
+<div>
+<h4 class="font-title-md text-title-md text-primary">Lokasi</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Jl. Senopati No. 88, Kebayoran Baru, Jakarta Selatan, 12190</p>
+</div>
+</div>
+<div class="flex gap-4 items-start">
+<div class="bg-secondary-container p-3 rounded-xl flex items-center justify-center">
+<span class="material-symbols-outlined text-on-secondary-container">schedule</span>
+</div>
+<div>
+<h4 class="font-title-md text-title-md text-primary">Jam Operasional</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Senin - Jumat: 08:00 - 22:00</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Sabtu - Minggu: 07:00 - 23:00</p>
+</div>
+</div>
+<div class="flex gap-4 items-start">
+<div class="bg-secondary-container p-3 rounded-xl flex items-center justify-center">
+<span class="material-symbols-outlined text-on-secondary-container">mail</span>
+</div>
+<div>
+<h4 class="font-title-md text-title-md text-primary">Email &amp; Telepon</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">halo@tokokopijaya.com</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">+62 21 555 1234</p>
+</div>
+</div>
+</div>
+<!-- Google Maps Placeholder -->
+<div class="rounded-2xl overflow-hidden gold-border coffee-glow h-64 grayscale hover:grayscale-0 transition-all duration-500">
+<img class="w-full h-full object-cover" data-alt="A stylized, clean map visualization showing the Senopati area in Jakarta South. The map features a minimalist design with soft earthy tones and a prominent golden marker indicating the location of a premium cafe, blending professional cartography with the brand's elegant aesthetic." data-location="Jakarta" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBfjqG3ks8H3kw-X5NIUsCOHxD0pysHvTFf5LWfcel-Fd_a9Du9vCKcz-QZP6FDqgttC4OfzgeiWLSqbonzuaJKQhzr0ZIHbuHGnNL1yBAzVXaTKNdiddoFuWJ-yf3mQlB6zUMThMVKfjuGc5RhEddZD_Vq0HqWvL-yauIwBRIbcQrykvsqTFNOS8sJ9UE88CUpPRJ7bRCRZBoCpCHD9hU2qXovIibyyigBACTJeXqAnTRDMeJWBihJR0I9h8MI1w7nDj1KBWfjFGpx"/>
+</div>
+</div>
+<!-- Contact Form -->
+<div class="lg:col-span-7 bg-surface-container-low p-8 md:p-12 rounded-3xl gold-border shadow-sm">
+<form class="space-y-6">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<div class="space-y-2">
+<label class="font-label-caps text-label-caps text-on-surface-variant uppercase">Nama Lengkap</label>
+<input class="w-full bg-transparent border-0 border-b border-outline-variant focus:ring-0 focus:border-secondary transition-colors py-2 text-body-lg" placeholder="Masukkan nama Anda" type="text"/>
+</div>
+<div class="space-y-2">
+<label class="font-label-caps text-label-caps text-on-surface-variant uppercase">Alamat Email</label>
+<input class="w-full bg-transparent border-0 border-b border-outline-variant focus:ring-0 focus:border-secondary transition-colors py-2 text-body-lg" placeholder="nama@email.com" type="email"/>
+</div>
+</div>
+<div class="space-y-2">
+<label class="font-label-caps text-label-caps text-on-surface-variant uppercase">Subjek</label>
+<select class="w-full bg-transparent border-0 border-b border-outline-variant focus:ring-0 focus:border-secondary transition-colors py-2 text-body-lg appearance-none">
+<option>Pertanyaan Umum</option>
+<option>Reservasi Acara</option>
+<option>Kritik &amp; Saran</option>
+<option>Kerjasama Karir</option>
+</select>
+</div>
+<div class="space-y-2">
+<label class="font-label-caps text-label-caps text-on-surface-variant uppercase">Pesan Anda</label>
+<textarea class="w-full bg-transparent border-0 border-b border-outline-variant focus:ring-0 focus:border-secondary transition-colors py-2 text-body-lg resize-none" placeholder="Tuliskan pesan Anda di sini..." rows="4"></textarea>
+</div>
+<div class="pt-4">
+<button class="w-full md:w-auto bg-primary text-on-primary px-12 py-4 rounded-full font-bold hover:bg-primary-container transition-all active:scale-95 shadow-lg" type="submit">Kirim Pesan</button>
+</div>
+</form>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full px-margin-mobile md:px-margin-desktop py-12 flex flex-col md:flex-row justify-between items-center gap-8 bg-primary border-t border-secondary/20">
+<div class="flex flex-col gap-4 text-center md:text-left">
+<div class="font-ebGaramond text-headline-lg text-secondary-fixed">Toko Kopi Jaya</div>
+<p class="font-plusJakartaSans text-body-sm text-on-primary/60 max-w-sm">© 2024 Toko Kopi Jaya. Kehangatan yang Elegan di Setiap Cangkir.</p>
+</div>
+<div class="flex gap-8 font-plusJakartaSans text-body-sm">
+<a class="text-on-primary/60 hover:text-secondary-fixed hover:underline decoration-secondary-fixed underline-offset-4 transition-all duration-300" href="#">Kebijakan Privasi</a>
+<a class="text-on-primary/60 hover:text-secondary-fixed hover:underline decoration-secondary-fixed underline-offset-4 transition-all duration-300" href="#">Syarat &amp; Ketentuan</a>
+<a class="text-on-primary/60 hover:text-secondary-fixed hover:underline decoration-secondary-fixed underline-offset-4 transition-all duration-300" href="#">Bantuan</a>
+<a class="text-on-primary/60 hover:text-secondary-fixed hover:underline decoration-secondary-fixed underline-offset-4 transition-all duration-300" href="#">Karir</a>
+</div>
+<div class="flex gap-4">
+<a class="p-2 bg-primary-container rounded-full text-secondary-fixed hover:scale-110 transition-transform" href="#"><span class="material-symbols-outlined">public</span></a>
+<a class="p-2 bg-primary-container rounded-full text-secondary-fixed hover:scale-110 transition-transform" href="#"><span class="material-symbols-outlined">camera_indoor</span></a>
+<a class="p-2 bg-primary-container rounded-full text-secondary-fixed hover:scale-110 transition-transform" href="#"><span class="material-symbols-outlined">alternate_email</span></a>
+</div>
+</footer>
+</body></html>

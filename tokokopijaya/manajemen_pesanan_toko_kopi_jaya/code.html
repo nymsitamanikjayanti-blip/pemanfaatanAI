@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+
+<html class="light" lang="id"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Manajemen Pesanan - Toko Kopi Jaya</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700&amp;family=EB+Garamond:wght@600&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "surface-container-high": "#eae8e4",
+                    "on-secondary-fixed-variant": "#574500",
+                    "on-primary-fixed-variant": "#5b403c",
+                    "on-tertiary-fixed-variant": "#76320f",
+                    "surface-tint": "#745853",
+                    "primary-fixed": "#ffdad4",
+                    "surface-container-highest": "#e4e2de",
+                    "inverse-surface": "#30312e",
+                    "on-surface-variant": "#504442",
+                    "on-primary": "#ffffff",
+                    "on-background": "#1b1c1a",
+                    "tertiary": "#300d00",
+                    "tertiary-fixed-dim": "#ffb596",
+                    "secondary-fixed": "#ffe088",
+                    "on-error-container": "#93000a",
+                    "surface-container-lowest": "#ffffff",
+                    "primary": "#271310",
+                    "background": "#fbf9f5",
+                    "secondary": "#735c00",
+                    "tertiary-fixed": "#ffdbcd",
+                    "primary-fixed-dim": "#e3beb8",
+                    "secondary-container": "#fed65b",
+                    "on-error": "#ffffff",
+                    "surface-dim": "#dbdad6",
+                    "outline-variant": "#d3c3c0",
+                    "primary-container": "#3e2723",
+                    "outline": "#827472",
+                    "on-tertiary": "#ffffff",
+                    "surface": "#fbf9f5",
+                    "on-secondary": "#ffffff",
+                    "surface-bright": "#fbf9f5",
+                    "secondary-fixed-dim": "#e9c349",
+                    "on-secondary-fixed": "#241a00",
+                    "on-primary-container": "#ae8d87",
+                    "error-container": "#ffdad6",
+                    "inverse-on-surface": "#f2f0ed",
+                    "error": "#ba1a1a",
+                    "surface-container": "#efeeea",
+                    "on-tertiary-fixed": "#360f00",
+                    "surface-container-low": "#f5f3ef",
+                    "on-secondary-container": "#745c00",
+                    "on-surface": "#1b1c1a",
+                    "inverse-primary": "#e3beb8",
+                    "tertiary-container": "#521b00",
+                    "on-tertiary-container": "#d67d54",
+                    "surface-variant": "#e4e2de",
+                    "on-primary-fixed": "#2b1613"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "margin-desktop": "40px",
+                    "container-max-width": "1200px",
+                    "base": "8px",
+                    "gutter": "24px",
+                    "margin-mobile": "16px"
+            },
+            "fontFamily": {
+                    "font-title-md": ["Plus Jakarta Sans"],
+                    "font-headline-lg": ["EB Garamond"],
+                    "font-display-lg": ["EB Garamond"],
+                    "font-label-caps": ["Plus Jakarta Sans"],
+                    "font-body-lg": ["Plus Jakarta Sans"],
+                    "font-body-sm": ["Plus Jakarta Sans"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .coffee-shadow {
+            box-shadow: 0 16px 32px rgba(62, 39, 35, 0.12);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-surface font-body-lg">
+<aside class="h-screen w-64 fixed left-0 top-0 bg-primary dark:bg-surface-container-lowest border-r border-outline/10 shadow-[16px_0_32px_rgba(62,39,35,0.12)] flex flex-col h-full py-6 z-50">
+<div class="px-6 mb-8">
+<h1 class="font-headline-lg text-title-md text-secondary-fixed">Toko Kopi Jaya</h1>
+</div>
+<div class="flex items-center gap-3 px-6 mb-10">
+<div class="w-10 h-10 rounded-full bg-secondary-fixed flex items-center justify-center overflow-hidden border border-secondary/20">
+<img class="w-full h-full object-cover" data-alt="A professional portrait of a boutique cafe manager in his 30s, wearing a clean linen apron over a crisp white shirt. The background is a soft-focus interior of a premium coffee house with warm wooden textures and amber lighting, reflecting a high-end, welcoming atmosphere with a sophisticated palette." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDrM3Tp4mQbN6fYrucLYSqDpCWu3_Lb08-vePFZeRcLopZR2ZMDdNH-8HIL6iqptgp3Y-MJhbh0iIecTBcZpe_w1h-ah1CewIv2LHQj4CA9BpMdPBu9IcGbZhCdWWVyhQpvTnN_AkjwB7ULvBB7zBImvDTaUIDfRpma9c6qltzHDlOrX10yC870OBimb8a6TepTnixLYOzOcX1cAixAOn-qyFQZRymffXxaINok-2zNXuDU4q4MfvKQwBe_UNhTdJKk-Q0Bw2MDqL7p"/>
+</div>
+<div>
+<p class="font-font-title-md text-body-sm text-secondary-fixed font-bold">Admin Jaya</p>
+<p class="font-font-body-sm text-body-sm text-on-primary/70">Manager Toko</p>
+</div>
+</div>
+<nav class="flex-1 space-y-1">
+<a class="text-on-primary/70 hover:text-on-primary hover:bg-primary-container/50 rounded-lg mx-2 flex items-center gap-3 px-4 py-3 hover:translate-x-1 transition-transform" href="../dashboard_admin_toko_kopi_jaya/code.html">
+<span class="material-symbols-outlined">dashboard</span>
+<span class="font-font-body-sm text-body-sm">Dashboard</span>
+</a>
+<a class="bg-secondary-container text-on-secondary-container rounded-lg mx-2 flex items-center gap-3 px-4 py-3 hover:translate-x-1 transition-transform" href="../manajemen_pesanan_toko_kopi_jaya/code.html">
+<span class="material-symbols-outlined">shopping_cart</span>
+<span class="font-font-body-sm text-body-sm">Pesanan</span>
+</a>
+<a class="text-on-primary/70 hover:text-on-primary hover:bg-primary-container/50 rounded-lg mx-2 flex items-center gap-3 px-4 py-3 hover:translate-x-1 transition-transform" href="#inventori">
+<span class="material-symbols-outlined">inventory_2</span>
+<span class="font-font-body-sm text-body-sm">Inventori</span>
+</a>
+<a class="text-on-primary/70 hover:text-on-primary hover:bg-primary-container/50 rounded-lg mx-2 flex items-center gap-3 px-4 py-3 hover:translate-x-1 transition-transform" href="#pelanggan">
+<span class="material-symbols-outlined">group</span>
+<span class="font-font-body-sm text-body-sm">Pelanggan</span>
+</a>
+<a class="text-on-primary/70 hover:text-on-primary hover:bg-primary-container/50 rounded-lg mx-2 flex items-center gap-3 px-4 py-3 hover:translate-x-1 transition-transform" href="#laporan">
+<span class="material-symbols-outlined">analytics</span>
+<span class="font-font-body-sm text-body-sm">Laporan</span>
+</a>
+</nav>
+<div class="px-4 mt-auto">
+<button class="w-full bg-secondary-fixed text-on-secondary-fixed font-bold py-3 rounded-lg flex items-center justify-center gap-2 active:opacity-80 transition-all">
+<span class="material-symbols-outlined">point_of_sale</span>
+<span class="font-font-body-sm text-body-sm">Buka Kasir</span>
+</button>
+</div>
+</aside>
+<main class="ml-64 min-h-screen p-margin-desktop bg-background">
+<header class="flex justify-between items-end mb-10">
+<div>
+<h2 class="font-font-headline-lg text-display-lg text-primary">Manajemen Pesanan</h2>
+<p class="text-on-surface-variant font-font-body-lg">Kelola pesanan pelanggan dengan efisiensi premium.</p>
+</div>
+<div class="flex gap-4">
+<div class="relative">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-outline">search</span>
+<input class="pl-10 pr-4 py-2 bg-surface-container-low border-b-2 border-outline/20 focus:border-secondary transition-all rounded-t-lg font-font-body-sm outline-none w-64" placeholder="Cari ID Pesanan..." type="text"/>
+</div>
+</div>
+</header>
+<section class="mb-8 flex gap-2 flex-wrap">
+<button class="px-6 py-2 rounded-full bg-primary text-on-primary font-font-label-caps text-label-caps transition-all active:scale-95">SEMUA</button>
+<button class="px-6 py-2 rounded-full bg-surface-container-high text-on-surface-variant font-font-label-caps text-label-caps hover:bg-primary/10 transition-all active:scale-95">MENUNGGU</button>
+<button class="px-6 py-2 rounded-full bg-surface-container-high text-on-surface-variant font-font-label-caps text-label-caps hover:bg-primary/10 transition-all active:scale-95">DIPROSES</button>
+<button class="px-6 py-2 rounded-full bg-surface-container-high text-on-surface-variant font-font-label-caps text-label-caps hover:bg-primary/10 transition-all active:scale-95">SELESAI</button>
+<button class="px-6 py-2 rounded-full bg-surface-container-high text-on-surface-variant font-font-label-caps text-label-caps hover:bg-primary/10 transition-all active:scale-95">DIBATALKAN</button>
+</section>
+<section class="bg-surface-container-lowest rounded-xl border border-outline-variant/20 coffee-shadow overflow-hidden">
+<div class="overflow-x-auto">
+<table class="w-full text-left border-collapse">
+<thead>
+<tr class="bg-surface-container border-b border-outline-variant/20">
+<th class="px-6 py-4 font-font-label-caps text-label-caps text-on-surface-variant">ORDER ID</th>
+<th class="px-6 py-4 font-font-label-caps text-label-caps text-on-surface-variant">PELANGGAN</th>
+<th class="px-6 py-4 font-font-label-caps text-label-caps text-on-surface-variant">PRODUK</th>
+<th class="px-6 py-4 font-font-label-caps text-label-caps text-on-surface-variant">TOTAL</th>
+<th class="px-6 py-4 font-font-label-caps text-label-caps text-on-surface-variant">STATUS</th>
+<th class="px-6 py-4 font-font-label-caps text-label-caps text-on-surface-variant">AKSI</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-outline-variant/10">
+<tr class="hover:bg-surface-container-low transition-colors group">
+<td class="px-6 py-5 font-font-body-sm text-primary font-bold">#JKT-8821</td>
+<td class="px-6 py-5">
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 rounded-full bg-tertiary-fixed flex items-center justify-center text-[10px] font-bold text-on-tertiary-fixed">AS</div>
+<span class="font-font-body-sm font-semibold">Aditya Saputra</span>
+</div>
+</td>
+<td class="px-6 py-5 text-on-surface-variant font-font-body-sm">2x Kopi Gula Aren, 1x Croissant</td>
+<td class="px-6 py-5 font-font-title-md text-title-md text-primary">Rp 125.000</td>
+<td class="px-6 py-5">
+<span class="bg-tertiary-fixed text-on-tertiary-fixed px-3 py-1 rounded-full text-[12px] font-bold tracking-wider">MENUNGGU</span>
+</td>
+<td class="px-6 py-5">
+<div class="flex gap-2 opacity-0 group-hover:opacity-100 transition-opacity">
+<button class="p-2 bg-primary text-on-primary rounded-lg hover:bg-primary-container transition-colors" title="Verifikasi Pembayaran">
+<span class="material-symbols-outlined text-sm">verified_user</span>
+</button>
+<button class="p-2 border border-outline rounded-lg text-primary hover:bg-surface-container-high transition-colors" title="Update Status">
+<span class="material-symbols-outlined text-sm">edit</span>
+</button>
+</div>
+</td>
+</tr>
+<tr class="hover:bg-surface-container-low transition-colors group">
+<td class="px-6 py-5 font-font-body-sm text-primary font-bold">#JKT-8820</td>
+<td class="px-6 py-5">
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 rounded-full bg-secondary-fixed flex items-center justify-center text-[10px] font-bold text-on-secondary-fixed">RR</div>
+<span class="font-font-body-sm font-semibold">Rina Rahmawati</span>
+</div>
+</td>
+<td class="px-6 py-5 text-on-surface-variant font-font-body-sm">1x Signature Latte (Hot)</td>
+<td class="px-6 py-5 font-font-title-md text-title-md text-primary">Rp 48.000</td>
+<td class="px-6 py-5">
+<span class="bg-secondary-container text-on-secondary-container px-3 py-1 rounded-full text-[12px] font-bold tracking-wider">DIPROSES</span>
+</td>
+<td class="px-6 py-5">
+<div class="flex gap-2 opacity-0 group-hover:opacity-100 transition-opacity">
+<button class="p-2 bg-primary text-on-primary rounded-lg hover:bg-primary-container transition-colors" title="Verifikasi Pembayaran">
+<span class="material-symbols-outlined text-sm">verified_user</span>
+</button>
+<button class="p-2 border border-outline rounded-lg text-primary hover:bg-surface-container-high transition-colors" title="Update Status">
+<span class="material-symbols-outlined text-sm">edit</span>
+</button>
+</div>
+</td>
+</tr>
+<tr class="hover:bg-surface-container-low transition-colors group">
+<td class="px-6 py-5 font-font-body-sm text-primary font-bold">#JKT-8819</td>
+<td class="px-6 py-5">
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 rounded-full bg-outline-variant flex items-center justify-center text-[10px] font-bold text-on-surface">BP</div>
+<span class="font-font-body-sm font-semibold">Budi Pratama</span>
+</div>
+</td>
+<td class="px-6 py-5 text-on-surface-variant font-font-body-sm">3x Cold Brew Bottle 250ml</td>
+<td class="px-6 py-5 font-font-title-md text-title-md text-primary">Rp 105.000</td>
+<td class="px-6 py-5">
+<span class="bg-surface-container-highest text-on-surface-variant px-3 py-1 rounded-full text-[12px] font-bold tracking-wider">SELESAI</span>
+</td>
+<td class="px-6 py-5">
+<div class="flex gap-2 opacity-0 group-hover:opacity-100 transition-opacity">
+<button class="p-2 bg-primary text-on-primary rounded-lg hover:bg-primary-container transition-colors" title="Verifikasi Pembayaran">
+<span class="material-symbols-outlined text-sm">verified_user</span>
+</button>
+<button class="p-2 border border-outline rounded-lg text-primary hover:bg-surface-container-high transition-colors" title="Update Status">
+<span class="material-symbols-outlined text-sm">edit</span>
+</button>
+</div>
+</td>
+</tr>
+<tr class="hover:bg-surface-container-low transition-colors group opacity-60">
+<td class="px-6 py-5 font-font-body-sm text-primary font-bold">#JKT-8818</td>
+<td class="px-6 py-5">
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 rounded-full bg-error-container flex items-center justify-center text-[10px] font-bold text-on-error-container">SM</div>
+<span class="font-font-body-sm font-semibold">Siti Maesaroh</span>
+</div>
+</td>
+<td class="px-6 py-5 text-on-surface-variant font-font-body-sm">1x V60 Ethiopia Sidamo</td>
+<td class="px-6 py-5 font-font-title-md text-title-md text-primary">Rp 55.000</td>
+<td class="px-6 py-5">
+<span class="bg-error-container text-on-error-container px-3 py-1 rounded-full text-[12px] font-bold tracking-wider">DIBATALKAN</span>
+</td>
+<td class="px-6 py-5">
+<div class="flex gap-2 opacity-0 group-hover:opacity-100 transition-opacity">
+<button class="p-2 border border-outline rounded-lg text-primary hover:bg-surface-container-high transition-colors" title="Lihat Detail">
+<span class="material-symbols-outlined text-sm">visibility</span>
+</button>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<footer class="px-6 py-4 bg-surface-container-low flex justify-between items-center">
+<span class="text-body-sm font-font-body-sm text-on-surface-variant">Menampilkan 4 dari 124 pesanan</span>
+<div class="flex gap-2">
+<button class="p-2 rounded-lg border border-outline-variant hover:bg-white transition-all active:scale-95 disabled:opacity-50" disabled="">
+<span class="material-symbols-outlined">chevron_left</span>
+</button>
+<button class="w-10 h-10 rounded-lg bg-primary text-on-primary font-bold flex items-center justify-center">1</button>
+<button class="w-10 h-10 rounded-lg border border-outline-variant hover:bg-white transition-all flex items-center justify-center">2</button>
+<button class="p-2 rounded-lg border border-outline-variant hover:bg-white transition-all active:scale-95">
+<span class="material-symbols-outlined">chevron_right</span>
+</button>
+</div>
+</footer>
+</section>
+<section class="mt-margin-desktop grid grid-cols-1 md:grid-cols-3 gap-6">
+<div class="p-6 bg-surface-container-lowest rounded-xl border border-outline-variant/20 flex flex-col gap-4">
+<div class="flex justify-between items-center">
+<span class="font-font-label-caps text-label-caps text-on-surface-variant tracking-widest uppercase">Statistik Harian</span>
+<span class="material-symbols-outlined text-secondary">trending_up</span>
+</div>
+<div>
+<h3 class="font-font-headline-lg text-headline-lg text-primary">42 Pesanan</h3>
+<p class="text-body-sm font-font-body-sm text-secondary-fixed-variant">+12% dari kemarin</p>
+</div>
+</div>
+<div class="p-6 bg-surface-container-lowest rounded-xl border border-outline-variant/20 flex flex-col gap-4">
+<div class="flex justify-between items-center">
+<span class="font-font-label-caps text-label-caps text-on-surface-variant tracking-widest uppercase">Perlu Tindakan</span>
+<span class="material-symbols-outlined text-tertiary">priority_high</span>
+</div>
+<div>
+<h3 class="font-font-headline-lg text-headline-lg text-primary">8 Pending</h3>
+<p class="text-body-sm font-font-body-sm text-on-surface-variant">Butuh verifikasi segera</p>
+</div>
+</div>
+<div class="p-6 bg-primary rounded-xl flex flex-col gap-4 shadow-xl">
+<div class="flex justify-between items-center">
+<span class="font-font-label-caps text-label-caps text-on-primary/60 tracking-widest uppercase">Target Omzet</span>
+<span class="material-symbols-outlined text-secondary-fixed">stars</span>
+</div>
+<div>
+<h3 class="font-font-headline-lg text-headline-lg text-secondary-fixed">84% Tercapai</h3>
+<div class="w-full bg-on-primary/10 h-2 rounded-full mt-2">
+<div class="bg-secondary-fixed h-full rounded-full w-[84%]"></div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<footer class="ml-64 w-full-minus-sidebar px-margin-desktop py-12 flex flex-col md:flex-row justify-between items-center gap-8 bg-primary dark:bg-surface-container-highest border-t border-secondary/20">
+<div class="flex flex-col gap-2">
+<h2 class="font-headline-lg text-headline-lg text-secondary-fixed">Toko Kopi Jaya</h2>
+<p class="text-on-primary/60 font-font-body-sm text-body-sm">© 2024 Toko Kopi Jaya. Kehangatan yang Elegan di Setiap Cangkir.</p>
+</div>
+<div class="flex gap-8">
+<a class="text-on-primary/60 hover:text-secondary-fixed transition-all hover:underline decoration-secondary-fixed underline-offset-4 font-font-body-sm text-body-sm" href="#">Bantuan</a>
+<a class="text-on-primary/60 hover:text-secondary-fixed transition-all hover:underline decoration-secondary-fixed underline-offset-4 font-font-body-sm text-body-sm" href="#">Syarat &amp; Ketentuan</a>
+<a class="text-on-primary/60 hover:text-secondary-fixed transition-all hover:underline decoration-secondary-fixed underline-offset-4 font-font-body-sm text-body-sm" href="#">Log Aktivitas</a>
+</div>
+</footer>
+</body></html>

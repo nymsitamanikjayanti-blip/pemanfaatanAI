@@ -1,0 +1,351 @@
+<html lang="id"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&amp;family=EB+Garamond:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                "surface-container-high": "#eae8e4",
+                "on-secondary-fixed-variant": "#574500",
+                "on-primary-fixed-variant": "#5b403c",
+                "on-tertiary-fixed-variant": "#76320f",
+                "surface-tint": "#745853",
+                "primary-fixed": "#ffdad4",
+                "surface-container-highest": "#e4e2de",
+                "inverse-surface": "#30312e",
+                "on-surface-variant": "#504442",
+                "on-primary": "#ffffff",
+                "on-background": "#1b1c1a",
+                "tertiary": "#300d00",
+                "tertiary-fixed-dim": "#ffb596",
+                "secondary-fixed": "#ffe088",
+                "on-error-container": "#93000a",
+                "surface-container-lowest": "#ffffff",
+                "primary": "#271310",
+                "background": "#fbf9f5",
+                "secondary": "#735c00",
+                "tertiary-fixed": "#ffdbcd",
+                "primary-fixed-dim": "#e3beb8",
+                "secondary-container": "#fed65b",
+                "on-error": "#ffffff",
+                "surface-dim": "#dbdad6",
+                "outline-variant": "#d3c3c0",
+                "primary-container": "#3e2723",
+                "outline": "#827472",
+                "on-tertiary": "#ffffff",
+                "surface": "#fbf9f5",
+                "on-secondary": "#ffffff",
+                "surface-bright": "#fbf9f5",
+                "secondary-fixed-dim": "#e9c349",
+                "on-secondary-fixed": "#241a00",
+                "on-primary-container": "#ae8d87",
+                "error-container": "#ffdad6",
+                "inverse-on-surface": "#f2f0ed",
+                "error": "#ba1a1a",
+                "surface-container": "#efeeea",
+                "on-tertiary-fixed": "#360f00",
+                "surface-container-low": "#f5f3ef",
+                "on-secondary-container": "#745c00",
+                "on-surface": "#1b1c1a",
+                "inverse-primary": "#e3beb8",
+                "tertiary-container": "#521b00",
+                "on-tertiary-container": "#d67d54",
+                "surface-variant": "#e4e2de",
+                "on-primary-fixed": "#2b1613"
+            },
+            "borderRadius": {
+                "DEFAULT": "0.25rem",
+                "lg": "0.5rem",
+                "xl": "0.75rem",
+                "full": "9999px"
+            },
+            "spacing": {
+                "margin-desktop": "40px",
+                "container-max-width": "1200px",
+                "base": "8px",
+                "gutter": "24px",
+                "margin-mobile": "16px"
+            },
+            "fontFamily": {
+                "title-md": ["Plus Jakarta Sans"],
+                "headline-lg": ["EB Garamond"],
+                "headline-lg-mobile": ["EB Garamond"],
+                "display-lg": ["EB Garamond"],
+                "label-caps": ["Plus Jakarta Sans"],
+                "body-lg": ["Plus Jakarta Sans"],
+                "body-sm": ["Plus Jakarta Sans"],
+                "plusJakartaSans": ["Plus Jakarta Sans"],
+                "ebGaramond": ["EB Garamond"]
+            },
+            "fontSize": {
+                "title-md": ["20px", {"lineHeight": "1.4", "fontWeight": "600"}],
+                "headline-lg": ["32px", {"lineHeight": "1.2", "fontWeight": "600"}],
+                "headline-lg-mobile": ["28px", {"lineHeight": "1.2", "fontWeight": "600"}],
+                "display-lg": ["48px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "600"}],
+                "label-caps": ["12px", {"lineHeight": "1", "letterSpacing": "0.05em", "fontWeight": "700"}],
+                "body-lg": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                "body-sm": ["14px", {"lineHeight": "1.5", "fontWeight": "400"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .glass-nav {
+            background: rgba(251, 249, 245, 0.8);
+            backdrop-filter: blur(12px);
+        }
+        .coffee-glow {
+            box-shadow: 0 16px 32px rgba(62, 39, 35, 0.08);
+        }
+        .step-active {
+            box-shadow: 0 0 0 4px rgba(212, 175, 55, 0.15);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body-lg">
+<!-- Top Navigation -->
+<nav class="sticky top-0 z-50 flex justify-between items-center px-margin-mobile md:px-margin-desktop py-4 w-full max-w-container-max-width mx-auto bg-surface/80 dark:bg-surface-container-highest/80 backdrop-blur-md border-b border-outline-variant/20 shadow-sm">
+<div class="font-ebGaramond text-headline-lg font-semibold text-primary dark:text-primary-fixed">Toko Kopi Jaya</div>
+<div class="hidden md:flex items-center gap-8 font-plusJakartaSans text-body-lg">
+<a class="text-on-surface-variant hover:text-primary transition-colors" href="../menu_toko_kopi_jaya/code.html">Menu</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors" href="../reservasi_toko_kopi_jaya/code.html">Reservasi</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors" href="../tentang_kami_toko_kopi_jaya/code.html">Tentang Kami</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors" href="../galeri_kontak_toko_kopi_jaya/code.html">Lokasi</a>
+</div>
+<a href="../pemesanan_online_tahap_1_3_toko_kopi_jaya/code.html" class="bg-primary-container text-on-primary-container px-6 py-2.5 rounded-full font-plusJakartaSans font-bold active:scale-95 duration-200 shadow-sm inline-block">Pesan Sekarang</a>
+</nav>
+<main class="max-w-container-max-width mx-auto px-margin-mobile md:px-margin-desktop py-12">
+<!-- Progress Indicator -->
+<header class="mb-12">
+<h1 class="font-headline-lg text-headline-lg text-primary text-center mb-8">Lengkapi Pemesanan Anda</h1>
+<div class="flex items-center justify-between max-w-2xl mx-auto relative px-4">
+<div class="absolute top-1/2 left-0 w-full h-[2px] bg-surface-container-high -z-10 -translate-y-1/2"></div>
+<!-- Step 1 -->
+<div class="flex flex-col items-center gap-2">
+<div class="w-10 h-10 rounded-full bg-primary text-on-primary flex items-center justify-center font-bold step-active">1</div>
+<span class="font-label-caps text-label-caps text-primary">DATA</span>
+</div>
+<!-- Step 2 -->
+<div class="flex flex-col items-center gap-2">
+<div class="w-10 h-10 rounded-full bg-surface-container-high text-on-surface-variant flex items-center justify-center font-bold">2</div>
+<span class="font-label-caps text-label-caps text-on-surface-variant">MENU</span>
+</div>
+<!-- Step 3 -->
+<div class="flex flex-col items-center gap-2">
+<div class="w-10 h-10 rounded-full bg-surface-container-high text-on-surface-variant flex items-center justify-center font-bold">3</div>
+<span class="font-label-caps text-label-caps text-on-surface-variant">METODE</span>
+</div>
+<!-- Step 4 -->
+<div class="flex flex-col items-center gap-2 opacity-50">
+<div class="w-10 h-10 rounded-full bg-surface-container-high text-on-surface-variant flex items-center justify-center font-bold">4</div>
+<span class="font-label-caps text-label-caps text-on-surface-variant">REVIEW</span>
+</div>
+<!-- Step 5 -->
+<div class="flex flex-col items-center gap-2 opacity-50">
+<div class="w-10 h-10 rounded-full bg-surface-container-high text-on-surface-variant flex items-center justify-center font-bold">5</div>
+<span class="font-label-caps text-label-caps text-on-surface-variant">BAYAR</span>
+</div>
+</div>
+</header>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter">
+<!-- Main Content Area: Flow Stages -->
+<div class="lg:col-span-8 space-y-12">
+<!-- STEP 1: CUSTOMER DATA (Visible for demo) -->
+<section class="bg-surface-container-lowest p-8 rounded-xl coffee-glow border border-secondary/10">
+<div class="flex items-center gap-3 mb-8">
+<span class="material-symbols-outlined text-secondary" style="font-variation-settings: 'FILL' 1;">person</span>
+<h2 class="font-title-md text-title-md text-primary">Data Pelanggan</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<div class="flex flex-col gap-2">
+<label class="font-label-caps text-label-caps text-on-surface-variant">NAMA LENGKAP</label>
+<input class="bg-transparent border-0 border-b border-outline-variant focus:ring-0 focus:border-secondary-fixed transition-all py-2 placeholder:text-outline/50" placeholder="Contoh: Budi Santoso" type="text"/>
+</div>
+<div class="flex flex-col gap-2">
+<label class="font-label-caps text-label-caps text-on-surface-variant">NOMOR HP / WHATSAPP</label>
+<input class="bg-transparent border-0 border-b border-outline-variant focus:ring-0 focus:border-secondary-fixed transition-all py-2 placeholder:text-outline/50" placeholder="0812 3456 7890" type="tel"/>
+</div>
+<div class="md:col-span-2 flex flex-col gap-2">
+<label class="font-label-caps text-label-caps text-on-surface-variant">EMAIL</label>
+<input class="bg-transparent border-0 border-b border-outline-variant focus:ring-0 focus:border-secondary-fixed transition-all py-2 placeholder:text-outline/50" placeholder="budi@email.com" type="email"/>
+</div>
+<div class="md:col-span-2 flex flex-col gap-2">
+<label class="font-label-caps text-label-caps text-on-surface-variant">ALAMAT LENGKAP</label>
+<textarea class="bg-transparent border-0 border-b border-outline-variant focus:ring-0 focus:border-secondary-fixed transition-all py-2 placeholder:text-outline/50" placeholder="Masukkan alamat pengiriman atau detail tambahan..." rows="3"></textarea>
+</div>
+</div>
+</section>
+<!-- STEP 2: MENU SELECTION -->
+<section class="space-y-8">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-secondary" style="font-variation-settings: 'FILL' 1;">coffee</span>
+<h2 class="font-title-md text-title-md text-primary">Pilihan Menu</h2>
+</div>
+<div class="flex gap-2">
+<span class="px-4 py-1.5 rounded-full bg-secondary-container text-on-secondary-container font-label-caps text-[10px]">COFFEE</span>
+<span class="px-4 py-1.5 rounded-full bg-surface-container-high text-on-surface-variant font-label-caps text-[10px]">NON-COFFEE</span>
+<span class="px-4 py-1.5 rounded-full bg-surface-container-high text-on-surface-variant font-label-caps text-[10px]">PASTRY</span>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<!-- Product Card 1 -->
+<div class="bg-surface-container-lowest rounded-xl overflow-hidden border border-secondary/10 flex hover:shadow-lg transition-all group">
+<div class="w-1/3 overflow-hidden">
+<img alt="Iced Gula Aren Latte" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="A macro photography shot of an iced latte with rich layers of creamy milk and dark espresso being poured over, topped with a drizzle of liquid palm sugar. The drink is served in a high-quality glass with condensed water droplets on the outside, set against a warm wooden table background in a sunlit coffee shop. The lighting is soft and golden, emphasizing the premium and inviting aesthetic of Toko Kopi Jaya." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCR8rBZ5dHWvPzhiN9oyr7w-AK7t5kj0wDQkbWcC3V6SC-vXU19CXdBMIJ_H7s3Nd8ONT7D7dIJGaqOZdUBkCNG2XQHaWtm0dQT5ajlKRyvxLyqvbVGvxFiisAd1dZcAyL0avEDOolNO2xG1n6pSuCavHTR5YPOZijlA8UsgzQbaoVEE1xStT2Ir0YwfjE098BLwWsge9u7dzu8DhX3CqHvWuT1_7XywJxgfwO39FpVGC4qoGlPRbTZzEHrsUXpQOhc8lUEq-YCPkjc"/>
+</div>
+<div class="w-2/3 p-4 flex flex-col justify-between">
+<div>
+<h3 class="font-plusJakartaSans font-bold text-primary">Iced Gula Aren Latte</h3>
+<p class="font-body-sm text-on-surface-variant line-clamp-2">Signature espresso dengan susu segar dan gula aren murni.</p>
+</div>
+<div class="flex items-center justify-between mt-4">
+<span class="font-title-md text-primary">Rp 28.000</span>
+<div class="flex items-center gap-3 bg-surface-container rounded-full px-3 py-1">
+<button class="text-primary hover:text-secondary"><span class="material-symbols-outlined text-sm">remove</span></button>
+<span class="font-bold">2</span>
+<button class="text-primary hover:text-secondary"><span class="material-symbols-outlined text-sm">add</span></button>
+</div>
+</div>
+</div>
+</div>
+<!-- Product Card 2 -->
+<div class="bg-surface-container-lowest rounded-xl overflow-hidden border border-secondary/10 flex hover:shadow-lg transition-all group">
+<div class="w-1/3 overflow-hidden">
+<img alt="Croissant Butter" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="A close-up of a perfectly flaky, golden-brown butter croissant resting on a minimalist ceramic plate. The pastry's delicate layers are visible, reflecting a warm interior light from a boutique cafe setting. A wisp of steam suggests it's freshly baked. The scene uses a rich palette of deep espresso browns and cream whites, capturing a high-end bakery atmosphere consistent with the elegant warmth brand identity." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD4n4UdC3U9TLJxBAh-STWufs3ujrQpqq_7TlL7OK-nPGr2z5UEMpet60MoEy04bOuzpe0FZyEeYue9n7VPPu6FQNYNnt4MXpyW866rwgoXcXyliA3oHUtg3I-R8_yJo-3c3o-gG0T3crgc9ZwYAFko5xbYF_b70X4skwulDY2QveLh5QUE1tvSWc3EsxFS9BLohSNfg-9tEIJUUYiKir9hUVRMlUe93xxGTqjV016k4jvWKR_XxJc0ZGCwbl00CTIVCrDib4VO5edy"/>
+</div>
+<div class="w-2/3 p-4 flex flex-col justify-between">
+<div>
+<div class="flex gap-2 mb-1">
+<span class="bg-tertiary-fixed text-on-tertiary-fixed px-2 py-0.5 rounded text-[10px] font-bold uppercase">Best Seller</span>
+</div>
+<h3 class="font-plusJakartaSans font-bold text-primary">Croissant Butter</h3>
+<p class="font-body-sm text-on-surface-variant line-clamp-2">Pastry renyah dengan mentega premium dari Perancis.</p>
+</div>
+<div class="flex items-center justify-between mt-4">
+<span class="font-title-md text-primary">Rp 22.000</span>
+<button class="bg-primary text-on-primary px-4 py-1.5 rounded-full font-label-caps text-[10px] hover:bg-primary-container transition-colors">TAMBAH</button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- STEP 3: PICKUP METHOD -->
+<section class="bg-surface-container-lowest p-8 rounded-xl border border-secondary/10 space-y-8">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-secondary" style="font-variation-settings: 'FILL' 1;">local_shipping</span>
+<h2 class="font-title-md text-title-md text-primary">Metode Pengambilan &amp; Jadwal</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+<button class="flex flex-col items-center gap-3 p-6 rounded-xl border-2 border-secondary text-primary bg-secondary-container/10">
+<span class="material-symbols-outlined text-3xl">restaurant</span>
+<span class="font-bold">Dine In</span>
+</button>
+<button class="flex flex-col items-center gap-3 p-6 rounded-xl border-2 border-outline-variant text-on-surface-variant hover:border-secondary transition-all">
+<span class="material-symbols-outlined text-3xl">shopping_bag</span>
+<span class="font-bold">Take Away</span>
+</button>
+<button class="flex flex-col items-center gap-3 p-6 rounded-xl border-2 border-outline-variant text-on-surface-variant hover:border-secondary transition-all">
+<span class="material-symbols-outlined text-3xl">delivery_dining</span>
+<span class="font-bold">Delivery</span>
+</button>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6 pt-4">
+<div class="flex flex-col gap-2">
+<label class="font-label-caps text-label-caps text-on-surface-variant">PILIH TANGGAL</label>
+<div class="relative">
+<input class="w-full bg-transparent border-0 border-b border-outline-variant focus:ring-0 focus:border-secondary-fixed transition-all py-2" type="date"/>
+</div>
+</div>
+<div class="flex flex-col gap-2">
+<label class="font-label-caps text-label-caps text-on-surface-variant">WAKTU PENGAMBILAN</label>
+<select class="w-full bg-transparent border-0 border-b border-outline-variant focus:ring-0 focus:border-secondary-fixed transition-all py-2">
+<option>Segera (15-20 menit)</option>
+<option>10:00 - 11:00</option>
+<option>11:00 - 12:00</option>
+<option>12:00 - 13:00</option>
+</select>
+</div>
+</div>
+</section>
+<!-- Navigation Buttons -->
+<div class="flex items-center justify-between pt-6">
+<button class="flex items-center gap-2 text-primary font-bold hover:translate-x-[-4px] transition-transform">
+<span class="material-symbols-outlined">arrow_back</span>
+                        Kembali
+                    </button>
+<button class="bg-primary text-on-primary px-10 py-4 rounded-full font-plusJakartaSans font-bold shadow-lg active:scale-95 transition-all">
+                        Lanjut ke Pembayaran
+                    </button>
+</div>
+</div>
+<!-- Sidebar: Order Summary -->
+<aside class="lg:col-span-4">
+<div class="sticky top-24 bg-primary text-on-primary p-8 rounded-2xl shadow-2xl">
+<h3 class="font-headline-lg text-title-md text-secondary-fixed mb-6">Ringkasan Pesanan</h3>
+<div class="space-y-4 mb-8">
+<div class="flex justify-between items-start">
+<div>
+<p class="font-bold">2x Iced Gula Aren Latte</p>
+<p class="text-xs text-on-primary/60">Large, Less Sugar</p>
+</div>
+<span class="font-bold">Rp 56.000</span>
+</div>
+<div class="flex justify-between items-start">
+<div>
+<p class="font-bold">1x Croissant Butter</p>
+<p class="text-xs text-on-primary/60">Heated</p>
+</div>
+<span class="font-bold">Rp 22.000</span>
+</div>
+</div>
+<div class="border-t border-on-primary/10 pt-4 space-y-2 mb-6">
+<div class="flex justify-between text-on-primary/80">
+<span>Subtotal</span>
+<span>Rp 78.000</span>
+</div>
+<div class="flex justify-between text-on-primary/80">
+<span>Pajak (10%)</span>
+<span>Rp 7.800</span>
+</div>
+</div>
+<div class="flex justify-between items-center text-secondary-fixed font-bold text-title-md">
+<span>Total</span>
+<span>Rp 85.800</span>
+</div>
+<div class="mt-8 p-4 bg-primary-container rounded-xl border border-secondary/20">
+<div class="flex items-center gap-2 text-on-primary-container mb-2">
+<span class="material-symbols-outlined text-sm">info</span>
+<span class="text-xs font-bold uppercase tracking-wider">Promo Tersedia</span>
+</div>
+<p class="text-xs text-on-primary/70">Gunakan kode "KOPIJAYA10" untuk diskon 10% transaksi pertama.</p>
+</div>
+</div>
+</aside>
+</div>
+</main>
+<!-- Footer -->
+<footer class="w-full bg-primary dark:bg-surface-container-highest border-t border-secondary/20 mt-20">
+<div class="max-w-container-max-width mx-auto px-margin-mobile md:px-margin-desktop py-12 flex flex-col md:flex-row justify-between items-center gap-8">
+<div class="text-center md:text-left">
+<div class="font-ebGaramond text-headline-lg text-secondary-fixed mb-2">Toko Kopi Jaya</div>
+<p class="font-plusJakartaSans text-body-sm text-on-primary/60">© 2024 Toko Kopi Jaya. Kehangatan yang Elegan di Setiap Cangkir.</p>
+</div>
+<div class="flex gap-6 font-plusJakartaSans text-body-sm">
+<a class="text-on-primary/60 hover:text-secondary-fixed transition-colors" href="#">Kebijakan Privasi</a>
+<a class="text-on-primary/60 hover:text-secondary-fixed transition-colors" href="#">Syarat &amp; Ketentuan</a>
+<a class="text-on-primary/60 hover:text-secondary-fixed transition-colors" href="#">Bantuan</a>
+</div>
+</div>
+</footer>
+</body></html>

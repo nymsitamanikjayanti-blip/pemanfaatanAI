@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+
+<html class="light" lang="id"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700&amp;family=EB+Garamond:wght@600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "surface-container-high": "#eae8e4",
+                    "on-secondary-fixed-variant": "#574500",
+                    "on-primary-fixed-variant": "#5b403c",
+                    "on-tertiary-fixed-variant": "#76320f",
+                    "surface-tint": "#745853",
+                    "primary-fixed": "#ffdad4",
+                    "surface-container-highest": "#e4e2de",
+                    "inverse-surface": "#30312e",
+                    "on-surface-variant": "#504442",
+                    "on-primary": "#ffffff",
+                    "on-background": "#1b1c1a",
+                    "tertiary": "#300d00",
+                    "tertiary-fixed-dim": "#ffb596",
+                    "secondary-fixed": "#ffe088",
+                    "on-error-container": "#93000a",
+                    "surface-container-lowest": "#ffffff",
+                    "primary": "#271310",
+                    "background": "#fbf9f5",
+                    "secondary": "#735c00",
+                    "tertiary-fixed": "#ffdbcd",
+                    "primary-fixed-dim": "#e3beb8",
+                    "secondary-container": "#fed65b",
+                    "on-error": "#ffffff",
+                    "surface-dim": "#dbdad6",
+                    "outline-variant": "#d3c3c0",
+                    "primary-container": "#3e2723",
+                    "outline": "#827472",
+                    "on-tertiary": "#ffffff",
+                    "surface": "#fbf9f5",
+                    "on-secondary": "#ffffff",
+                    "surface-bright": "#fbf9f5",
+                    "secondary-fixed-dim": "#e9c349",
+                    "on-secondary-fixed": "#241a00",
+                    "on-primary-container": "#ae8d87",
+                    "error-container": "#ffdad6",
+                    "inverse-on-surface": "#f2f0ed",
+                    "error": "#ba1a1a",
+                    "surface-container": "#efeeea",
+                    "on-tertiary-fixed": "#360f00",
+                    "surface-container-low": "#f5f3ef",
+                    "on-secondary-container": "#745c00",
+                    "on-surface": "#1b1c1a",
+                    "inverse-primary": "#e3beb8",
+                    "tertiary-container": "#521b00",
+                    "on-tertiary-container": "#d67d54",
+                    "surface-variant": "#e4e2de",
+                    "on-primary-fixed": "#2b1613"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "margin-desktop": "40px",
+                    "container-max-width": "1200px",
+                    "base": "8px",
+                    "gutter": "24px",
+                    "margin-mobile": "16px"
+            },
+            "fontFamily": {
+                    "plusJakartaSans": ["Plus Jakarta Sans", "sans-serif"],
+                    "ebGaramond": ["EB Garamond", "serif"],
+                    "title-md": ["Plus Jakarta Sans"],
+                    "headline-lg": ["EB Garamond"],
+                    "headline-lg-mobile": ["EB Garamond"],
+                    "display-lg": ["EB Garamond"],
+                    "label-caps": ["Plus Jakarta Sans"],
+                    "body-lg": ["Plus Jakarta Sans"],
+                    "body-sm": ["Plus Jakarta Sans"]
+            },
+            "fontSize": {
+                    "title-md": ["20px", {"lineHeight": "1.4", "fontWeight": "600"}],
+                    "headline-lg": ["32px", {"lineHeight": "1.2", "fontWeight": "600"}],
+                    "headline-lg-mobile": ["28px", {"lineHeight": "1.2", "fontWeight": "600"}],
+                    "display-lg": ["48px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "600"}],
+                    "label-caps": ["12px", {"lineHeight": "1", "letterSpacing": "0.05em", "fontWeight": "700"}],
+                    "body-lg": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "body-sm": ["14px", {"lineHeight": "1.5", "fontWeight": "400"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .coffee-glow {
+            box-shadow: 0 16px 32px rgba(62, 39, 35, 0.12);
+        }
+        .glass-nav {
+            backdrop-filter: blur(10px);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-surface font-body-lg">
+<!-- Top Navigation Bar -->
+<nav class="sticky top-0 z-50 flex justify-between items-center px-margin-mobile md:px-margin-desktop py-4 w-full max-w-container-max-width mx-auto bg-surface/80 dark:bg-surface-container-highest/80 backdrop-blur-md border-b border-outline-variant/20 shadow-sm">
+<div class="font-ebGaramond text-headline-lg font-semibold text-primary dark:text-primary-fixed">Toko Kopi Jaya</div>
+<!-- Desktop Nav Links -->
+<div class="hidden md:flex items-center gap-8 font-plusJakartaSans text-body-lg">
+<a class="text-on-surface-variant hover:text-primary transition-colors" href="../menu_toko_kopi_jaya/code.html">Menu</a>
+<a class="text-primary font-bold border-b-2 border-secondary" href="../reservasi_toko_kopi_jaya/code.html">Reservasi</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors" href="../tentang_kami_toko_kopi_jaya/code.html">Tentang Kami</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors" href="../galeri_kontak_toko_kopi_jaya/code.html">Lokasi</a>
+</div>
+<a href="../pemesanan_online_tahap_1_3_toko_kopi_jaya/code.html" class="bg-primary-container text-on-primary-container px-6 py-2.5 rounded-lg font-plusJakartaSans font-bold active:scale-95 duration-200 shadow-sm transition-all inline-block">
+            Pesan Sekarang
+        </a>
+</nav>
+<main class="max-w-container-max-width mx-auto px-margin-mobile md:px-margin-desktop py-12">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+<!-- Left Side: Visual & Info -->
+<div class="lg:col-span-5 space-y-8">
+<div class="space-y-4">
+<span class="inline-block px-3 py-1 bg-tertiary-fixed text-on-tertiary-fixed font-label-caps rounded-full uppercase tracking-widest text-[10px]">Eksklusif &amp; Nyaman</span>
+<h1 class="font-display-lg text-display-lg text-primary">Amankan Meja Favorit Anda</h1>
+<p class="text-on-surface-variant font-body-lg leading-relaxed">Nikmati aroma kopi autentik dalam suasana yang tenang. Baik untuk rapat produktif maupun momen hangat bersama keluarga, kami menyediakan ruang terbaik untuk Anda.</p>
+</div>
+<div class="relative rounded-xl overflow-hidden aspect-[4/5] coffee-glow group">
+<img alt="Cafe Interior" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="A warm and inviting boutique cafe interior with rich dark wood furniture, soft golden ambient lighting filtering through large windows, and a minimalist aesthetic. The scene features elegant ceramic coffee cups on marble-topped tables and lush green plants in the corner, creating a premium and serene atmosphere with deep espresso tones and soft cream highlights." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCFn9jrJt0DT3vd91JkPbRx5kEnsP-wfQJ3X4BbjMCTLB2RatJWPtAmhQl6QODdwUdLO9oSls9S4g-Jd4C3HFeD-mABVZuWkMP7eWsyZuNvVTaHD58EMjcmjD5KjIY1hvJUn6KVBWFhr-kx2oC4x_AAQZYPFEe5vrmNTo3u8mgP77GuNRoTVShYVGRxJN90tBdd9U2ca5ZSmXjWDXeX5TffSHFg8iq0LtGC2DvNb6ulotI5rV79svWE-NulvWwamhg0L58Bfjq4jksl"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/80 to-transparent flex flex-col justify-end p-8 text-white">
+<p class="font-headline-lg text-headline-lg">Area Indoor Premium</p>
+<p class="font-body-sm opacity-80">Dilengkapi dengan pendingin ruangan dan koneksi internet cepat.</p>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-4">
+<div class="p-6 bg-surface-container-low rounded-xl border border-outline-variant/20">
+<span class="material-symbols-outlined text-secondary mb-3" style="font-size: 32px;">event_seat</span>
+<h4 class="font-title-md text-primary">Kapasitas Luas</h4>
+<p class="font-body-sm text-on-surface-variant">Hingga 50 orang per area.</p>
+</div>
+<div class="p-6 bg-surface-container-low rounded-xl border border-outline-variant/20">
+<span class="material-symbols-outlined text-secondary mb-3" style="font-size: 32px;">schedule</span>
+<h4 class="font-title-md text-primary">Jam Operasional</h4>
+<p class="font-body-sm text-on-surface-variant">08:00 - 22:00 Setiap Hari.</p>
+</div>
+</div>
+</div>
+<!-- Right Side: Reservation Form -->
+<div class="lg:col-span-7 bg-white rounded-2xl coffee-glow border border-outline-variant/10 p-8 md:p-12">
+<form class="space-y-8">
+<div class="space-y-6">
+<h2 class="font-headline-lg text-primary flex items-center gap-3">
+<span class="material-symbols-outlined text-secondary">calendar_today</span>
+                            Detail Reservasi
+                        </h2>
+<!-- Date & Time Row -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<div class="space-y-2">
+<label class="font-label-caps text-on-surface-variant">PILIH TANGGAL</label>
+<div class="relative">
+<input class="w-full px-4 py-3 bg-surface-container-lowest border-b-2 border-outline-variant focus:border-secondary outline-none transition-all font-body-lg text-primary appearance-none" type="date"/>
+<span class="material-symbols-outlined absolute right-3 top-1/2 -translate-y-1/2 text-outline pointer-events-none">event</span>
+</div>
+</div>
+<div class="space-y-2">
+<label class="font-label-caps text-on-surface-variant">PILIH JAM</label>
+<div class="relative">
+<select class="w-full px-4 py-3 bg-surface-container-lowest border-b-2 border-outline-variant focus:border-secondary outline-none transition-all font-body-lg text-primary appearance-none">
+<option>09:00 WIB</option>
+<option>11:00 WIB</option>
+<option>14:00 WIB</option>
+<option>16:00 WIB</option>
+<option>19:00 WIB</option>
+<option>20:00 WIB</option>
+</select>
+<span class="material-symbols-outlined absolute right-3 top-1/2 -translate-y-1/2 text-outline pointer-events-none">expand_more</span>
+</div>
+</div>
+</div>
+<!-- Visitors & Area Row -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<div class="space-y-2">
+<label class="font-label-caps text-on-surface-variant">JUMLAH PENGUNJUNG</label>
+<div class="flex items-center gap-4 bg-surface-container-low rounded-lg p-1 border border-outline-variant/30">
+<button class="w-10 h-10 flex items-center justify-center bg-white rounded shadow-sm text-primary hover:bg-secondary-container transition-colors" type="button">
+<span class="material-symbols-outlined">remove</span>
+</button>
+<input class="flex-1 text-center bg-transparent border-none font-bold text-primary" readonly="" type="text" value="2"/>
+<button class="w-10 h-10 flex items-center justify-center bg-white rounded shadow-sm text-primary hover:bg-secondary-container transition-colors" type="button">
+<span class="material-symbols-outlined">add</span>
+</button>
+</div>
+</div>
+<div class="space-y-2">
+<label class="font-label-caps text-on-surface-variant">PILIHAN AREA</label>
+<div class="grid grid-cols-3 gap-2">
+<button class="py-3 px-2 text-center text-[12px] border border-outline-variant rounded-lg font-bold text-on-surface-variant hover:border-secondary hover:text-secondary transition-all active:scale-95" type="button">
+                                        INDOOR
+                                    </button>
+<button class="py-3 px-2 text-center text-[12px] border-2 border-secondary bg-secondary-container rounded-lg font-bold text-on-secondary-container transition-all active:scale-95" type="button">
+                                        OUTDOOR
+                                    </button>
+<button class="py-3 px-2 text-center text-[12px] border border-outline-variant rounded-lg font-bold text-on-surface-variant hover:border-secondary hover:text-secondary transition-all active:scale-95" type="button">
+                                        BAR
+                                    </button>
+</div>
+</div>
+</div>
+<!-- Notes Area -->
+<div class="space-y-2">
+<label class="font-label-caps text-on-surface-variant">CATATAN TAMBAHAN (OPSIONAL)</label>
+<textarea class="w-full px-4 py-3 bg-surface-container-lowest border-b-2 border-outline-variant focus:border-secondary outline-none transition-all font-body-lg text-primary resize-none" placeholder="Contoh: Perayaan ulang tahun, alergi kacang, atau butuh stopkontak..." rows="4"></textarea>
+</div>
+</div>
+<div class="pt-6 border-t border-outline-variant/20 space-y-6">
+<div class="flex items-start gap-3">
+<input class="mt-1 w-4 h-4 rounded border-outline-variant text-primary focus:ring-secondary" id="terms" type="checkbox"/>
+<label class="font-body-sm text-on-surface-variant" for="terms">Saya menyetujui <a class="text-primary font-bold underline" href="#">Syarat &amp; Ketentuan</a> reservasi Toko Kopi Jaya.</label>
+</div>
+<button class="w-full py-4 bg-primary text-on-primary rounded-xl font-title-md hover:bg-primary-container transition-all shadow-lg flex items-center justify-center gap-3 active:scale-[0.98]" type="submit">
+                            Konfirmasi Reservasi
+                            <span class="material-symbols-outlined">arrow_forward</span>
+</button>
+<p class="text-center font-body-sm text-on-surface-variant italic">Konfirmasi akan dikirim melalui WhatsApp dalam hitungan menit.</p>
+</div>
+</form>
+</div>
+</div>
+</main>
+<!-- Footer -->
+<footer class="w-full px-margin-mobile md:px-margin-desktop py-12 flex flex-col md:flex-row justify-between items-center gap-8 bg-primary text-on-primary border-t border-secondary/20">
+<div class="space-y-4 text-center md:text-left">
+<div class="font-ebGaramond text-headline-lg text-secondary-fixed">Toko Kopi Jaya</div>
+<p class="font-plusJakartaSans text-body-sm max-w-sm opacity-80">© 2024 Toko Kopi Jaya. Kehangatan yang Elegan di Setiap Cangkir.</p>
+</div>
+<div class="flex flex-wrap justify-center gap-6 font-plusJakartaSans text-body-sm">
+<a class="text-on-primary/60 hover:text-secondary-fixed transition-all hover:underline decoration-secondary-fixed underline-offset-4" href="#">Kebijakan Privasi</a>
+<a class="text-on-primary/60 hover:text-secondary-fixed transition-all hover:underline decoration-secondary-fixed underline-offset-4" href="#">Syarat &amp; Ketentuan</a>
+<a class="text-on-primary/60 hover:text-secondary-fixed transition-all hover:underline decoration-secondary-fixed underline-offset-4" href="#">Bantuan</a>
+<a class="text-on-primary/60 hover:text-secondary-fixed transition-all hover:underline decoration-secondary-fixed underline-offset-4" href="#">Karir</a>
+</div>
+<div class="flex gap-4">
+<div class="w-10 h-10 rounded-full border border-secondary/30 flex items-center justify-center hover:bg-secondary/20 cursor-pointer transition-all">
+<span class="material-symbols-outlined text-secondary-fixed">share</span>
+</div>
+<div class="w-10 h-10 rounded-full border border-secondary/30 flex items-center justify-center hover:bg-secondary/20 cursor-pointer transition-all">
+<span class="material-symbols-outlined text-secondary-fixed">location_on</span>
+</div>
+</div>
+</footer>
+<!-- Mobile Bottom Nav (Filter Applied: Only for top-level navigation) -->
+<div class="md:hidden fixed bottom-0 left-0 right-0 bg-surface/95 backdrop-blur-md border-t border-outline-variant/10 px-6 py-3 flex justify-between items-center z-50">
+<div class="flex flex-col items-center gap-1 text-on-surface-variant">
+<span class="material-symbols-outlined">home</span>
+<span class="text-[10px] font-bold">Home</span>
+</div>
+<div class="flex flex-col items-center gap-1 text-primary">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">calendar_month</span>
+<span class="text-[10px] font-bold">Reservasi</span>
+</div>
+<div class="flex flex-col items-center gap-1 text-on-surface-variant">
+<span class="material-symbols-outlined">restaurant_menu</span>
+<span class="text-[10px] font-bold">Menu</span>
+</div>
+<div class="flex flex-col items-center gap-1 text-on-surface-variant">
+<span class="material-symbols-outlined">person</span>
+<span class="text-[10px] font-bold">Profil</span>
+</div>
+</div>
+</body></html>

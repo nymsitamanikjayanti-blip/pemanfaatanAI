@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+
+<html class="light" lang="id"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Menu - Toko Kopi Jaya</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700&amp;family=EB+Garamond:wght@600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "surface-container-high": "#eae8e4",
+                    "on-secondary-fixed-variant": "#574500",
+                    "on-primary-fixed-variant": "#5b403c",
+                    "on-tertiary-fixed-variant": "#76320f",
+                    "surface-tint": "#745853",
+                    "primary-fixed": "#ffdad4",
+                    "surface-container-highest": "#e4e2de",
+                    "inverse-surface": "#30312e",
+                    "on-surface-variant": "#504442",
+                    "on-primary": "#ffffff",
+                    "on-background": "#1b1c1a",
+                    "tertiary": "#300d00",
+                    "tertiary-fixed-dim": "#ffb596",
+                    "secondary-fixed": "#ffe088",
+                    "on-error-container": "#93000a",
+                    "surface-container-lowest": "#ffffff",
+                    "primary": "#271310",
+                    "background": "#fbf9f5",
+                    "secondary": "#735c00",
+                    "tertiary-fixed": "#ffdbcd",
+                    "primary-fixed-dim": "#e3beb8",
+                    "secondary-container": "#fed65b",
+                    "on-error": "#ffffff",
+                    "surface-dim": "#dbdad6",
+                    "outline-variant": "#d3c3c0",
+                    "primary-container": "#3e2723",
+                    "outline": "#827472",
+                    "on-tertiary": "#ffffff",
+                    "surface": "#fbf9f5",
+                    "on-secondary": "#ffffff",
+                    "surface-bright": "#fbf9f5",
+                    "secondary-fixed-dim": "#e9c349",
+                    "on-secondary-fixed": "#241a00",
+                    "on-primary-container": "#ae8d87",
+                    "error-container": "#ffdad6",
+                    "inverse-on-surface": "#f2f0ed",
+                    "error": "#ba1a1a",
+                    "surface-container": "#efeeea",
+                    "on-tertiary-fixed": "#360f00",
+                    "surface-container-low": "#f5f3ef",
+                    "on-secondary-container": "#745c00",
+                    "on-surface": "#1b1c1a",
+                    "inverse-primary": "#e3beb8",
+                    "tertiary-container": "#521b00",
+                    "on-tertiary-container": "#d67d54",
+                    "surface-variant": "#e4e2de",
+                    "on-primary-fixed": "#2b1613"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "margin-desktop": "40px",
+                    "container-max-width": "1200px",
+                    "base": "8px",
+                    "gutter": "24px",
+                    "margin-mobile": "16px"
+            },
+            "fontFamily": {
+                    "plusJakartaSans": ["Plus Jakarta Sans", "sans-serif"],
+                    "ebGaramond": ["EB Garamond", "serif"],
+                    "title-md": ["Plus Jakarta Sans"],
+                    "headline-lg": ["EB Garamond"],
+                    "headline-lg-mobile": ["EB Garamond"],
+                    "display-lg": ["EB Garamond"],
+                    "label-caps": ["Plus Jakarta Sans"],
+                    "body-lg": ["Plus Jakarta Sans"],
+                    "body-sm": ["Plus Jakarta Sans"]
+            },
+            "fontSize": {
+                    "title-md": ["20px", {"lineHeight": "1.4", "fontWeight": "600"}],
+                    "headline-lg": ["32px", {"lineHeight": "1.2", "fontWeight": "600"}],
+                    "headline-lg-mobile": ["28px", {"lineHeight": "1.2", "fontWeight": "600"}],
+                    "display-lg": ["48px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "600"}],
+                    "label-caps": ["12px", {"lineHeight": "1", "letterSpacing": "0.05em", "fontWeight": "700"}],
+                    "body-lg": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "body-sm": ["14px", {"lineHeight": "1.5", "fontWeight": "400"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .coffee-glow {
+            box-shadow: 0 16px 32px rgba(62, 39, 35, 0.12);
+        }
+    </style>
+</head>
+<body class="bg-surface font-body-lg text-on-surface">
+<!-- TopNavBar -->
+<nav class="sticky top-0 z-50 flex justify-between items-center px-margin-mobile md:px-margin-desktop py-4 w-full max-w-container-max-width mx-auto bg-surface/80 dark:bg-surface-container-highest/80 backdrop-blur-md border-b border-outline-variant/20 shadow-sm">
+<div class="font-ebGaramond text-headline-lg font-semibold text-primary dark:text-primary-fixed">Toko Kopi Jaya</div>
+<div class="hidden md:flex items-center gap-8">
+<a class="font-plusJakartaSans text-body-lg text-primary font-bold border-b-2 border-secondary" href="../menu_toko_kopi_jaya/code.html">Menu</a>
+<a class="font-plusJakartaSans text-body-lg text-on-surface-variant hover:text-primary transition-colors" href="../reservasi_toko_kopi_jaya/code.html">Reservasi</a>
+<a class="font-plusJakartaSans text-body-lg text-on-surface-variant hover:text-primary transition-colors" href="../tentang_kami_toko_kopi_jaya/code.html">Tentang Kami</a>
+<a class="font-plusJakartaSans text-body-lg text-on-surface-variant hover:text-primary transition-colors" href="../galeri_kontak_toko_kopi_jaya/code.html">Lokasi</a>
+</div>
+<div class="flex items-center gap-4">
+<button class="material-symbols-outlined p-2 text-on-surface-variant hover:bg-surface-container-high/50 rounded-full transition-all active:scale-95">search</button>
+<a href="../pemesanan_online_tahap_1_3_toko_kopi_jaya/code.html" class="bg-primary-container text-on-primary-container px-6 py-2.5 rounded-full font-plusJakartaSans text-body-sm font-semibold active:scale-95 duration-200 inline-block">Pesan Sekarang</a>
+</div>
+</nav>
+<main class="max-w-container-max-width mx-auto px-margin-mobile md:px-margin-desktop py-12">
+<div class="flex flex-col md:flex-row gap-gutter">
+<!-- Sidebar Filter -->
+<aside class="w-full md:w-64 flex-shrink-0">
+<div class="sticky top-24 space-y-6">
+<h2 class="font-headline-lg text-headline-lg text-primary mb-6">Kategori</h2>
+<nav class="flex flex-col gap-2">
+<button class="flex items-center gap-3 px-4 py-3 rounded-lg bg-secondary-container text-on-secondary-container font-plusJakartaSans font-semibold transition-transform hover:translate-x-1">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">coffee</span>
+                            Minuman Kopi
+                        </button>
+<button class="flex items-center gap-3 px-4 py-3 rounded-lg text-on-surface-variant hover:bg-surface-container-high/50 font-plusJakartaSans transition-transform hover:translate-x-1">
+<span class="material-symbols-outlined">local_drink</span>
+                            Non-Kopi
+                        </button>
+<button class="flex items-center gap-3 px-4 py-3 rounded-lg text-on-surface-variant hover:bg-surface-container-high/50 font-plusJakartaSans transition-transform hover:translate-x-1">
+<span class="material-symbols-outlined">bakery_dining</span>
+                            Dessert &amp; Makanan Ringan
+                        </button>
+</nav>
+<div class="p-6 rounded-xl bg-primary-container text-on-primary-container mt-12 coffee-glow border border-outline/10">
+<p class="font-label-caps text-secondary-fixed mb-2 uppercase tracking-widest text-[10px]">Promo Hari Ini</p>
+<h4 class="font-headline-lg text-title-md text-white mb-2">Morning Bloom</h4>
+<p class="text-body-sm text-on-primary-container/80 mb-4">Diskon 20% untuk semua varian Latte sebelum jam 10 pagi.</p>
+<button class="text-secondary-fixed font-bold text-body-sm underline decoration-secondary-fixed underline-offset-4">Lihat Detail</button>
+</div>
+</div>
+</aside>
+<!-- Product Content -->
+<div class="flex-grow">
+<div class="flex justify-between items-end mb-10">
+<div>
+<h1 class="font-display-lg text-display-lg text-primary mb-2">Menemukan Kenikmatan</h1>
+<p class="text-on-surface-variant font-body-lg">Pilihan kurasi biji kopi terbaik dan hidangan pendamping premium.</p>
+</div>
+<div class="hidden md:flex gap-2 text-on-surface-variant text-body-sm">
+<span class="font-bold text-primary">64</span> Produk Tersedia
+                    </div>
+</div>
+<!-- Bento-ish Grid -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+<!-- Featured Product: Espresso -->
+<div class="group relative bg-white rounded-xl overflow-hidden coffee-glow border border-secondary/10 hover:border-secondary transition-all">
+<div class="relative h-64 overflow-hidden">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="A close-up shot of a rich, dark espresso being poured into a minimalist ceramic cup. The scene is set in a premium cafe with soft, warm ambient lighting that highlights the thick crema on top. The background features blurred textures of aged wood and golden metallic accents, creating an elegant and professional coffee-house atmosphere." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBF01P0SsCqIfXNiSc11bduJfILYqHeDvEG4vL4sjwK7zHqm4cJYziNWXcBYbu-JDWharnVRDLgpSjkvB0RHrOs38J12hg4FqJ9MulUPlRohaT3M7tbnWQGbNvlJRNqtpWOx8Lnr8cL9gvCXwWu3o3KJ0U4VA6aP4DD0nZcahFcCl7CEINnHrefAHLyQkVuxrxHUVPohurZ2ewHVY0kDMJovf8ghYu4ZY1-MWYnxotylwrf5Y_5rCIag8r3pbOVWZA5r8kPQgdYhI4E"/>
+<span class="absolute top-4 left-4 bg-tertiary-fixed text-on-tertiary-fixed px-3 py-1 rounded-full font-label-caps text-[10px]">BEST SELLER</span>
+</div>
+<div class="p-6">
+<div class="flex justify-between items-start mb-2">
+<h3 class="font-title-md text-title-md text-primary">Espresso Jaya</h3>
+<span class="font-plusJakartaSans font-bold text-title-md text-primary">Rp 25k</span>
+</div>
+<p class="text-body-sm text-on-surface-variant mb-6 line-clamp-2">Ekstraksi murni biji kopi Arabika pilihan dengan aroma floral dan body yang intens.</p>
+<a href="../pemesanan_online_tahap_1_3_toko_kopi_jaya/code.html" class="w-full bg-primary py-3 rounded-lg text-white font-plusJakartaSans text-body-sm font-semibold active:scale-95 transition-all inline-block text-center">Pesan Sekarang</a>
+</div>
+</div>
+<!-- Featured Product: Latte -->
+<div class="group relative bg-white rounded-xl overflow-hidden coffee-glow border border-secondary/10 hover:border-secondary transition-all">
+<div class="relative h-64 overflow-hidden">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="A beautifully crafted caffe latte with intricate tulip latte art in a wide white ceramic mug. Steam gently rises from the cup, which sits on a minimalist wooden table bathed in golden afternoon sunlight. The setting is a modern, airy cafe with high ceilings and a clean, premium aesthetic dominated by warm cream and espresso tones." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCAw1cT3dg4qfscFtpxus1ox7DuAoqInzjsyTSuEvvYCynid-HGZspnayWbk5D3FSmJwS9ukqwjp5279cVNactg50ZSuwZ-QJ8OUr9X5aJoxLPqhfYLlDBLKsS_cohR0V44Cl5CveTRKgRIkYXcCCtcPfCcTnDtGL_H4KWYFCIZxuXD2GSqrTKWi4CAKblsL4-Po2ktOP0NH8M8LxMtfEkg_fs8nXRC8bRUYYx_X5ceguHUxSwuLtg8-ga81PkrZylt3R0XCg9IncBn"/>
+</div>
+<div class="p-6">
+<div class="flex justify-between items-start mb-2">
+<h3 class="font-title-md text-title-md text-primary">Classic Latte</h3>
+<span class="font-plusJakartaSans font-bold text-title-md text-primary">Rp 38k</span>
+</div>
+<p class="text-body-sm text-on-surface-variant mb-6 line-clamp-2">Paduan lembut susu steamed premium dan espresso house-blend kami.</p>
+<a href="../pemesanan_online_tahap_1_3_toko_kopi_jaya/code.html" class="w-full bg-primary py-3 rounded-lg text-white font-plusJakartaSans text-body-sm font-semibold active:scale-95 transition-all inline-block text-center">Pesan Sekarang</a>
+</div>
+</div>
+<!-- Featured Product: Matcha -->
+<div class="group relative bg-white rounded-xl overflow-hidden coffee-glow border border-secondary/10 hover:border-secondary transition-all">
+<div class="relative h-64 overflow-hidden">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="A vibrant green ceremonial grade matcha latte in a minimalist clear glass, showing the gradient of milk and tea. The background is a bright, sun-drenched cafe interior with clean lines and premium tactile textures. The lighting is soft and diffused, creating a serene and modern atmosphere that highlights the natural color of the matcha." src="https://lh3.googleusercontent.com/aida-public/AB6AXuADckC8OUa91WFPgh-Wo7oGFDotuWL0aktXHQlVVxZNx-nkr1ndmhjhvce_937BzykD6agSojmr-fel4YUTX6TFCA4tK9U0otXbiMoCJ4a3h11EMi861HJB2JmcIJcQm32M5UHSCqxXq_1GcTHYD_Pobx0_q5pXlAXobf7RtyTLspS0258sJp1yDSwyuBNpWUt0b3OpjMrKgSiy_OqPw0YROpw_xOtpmWxR7uK3ymwwjhi57IKGMKw2VmyLnLncU0-PrNa7gO8Oayml"/>
+<span class="absolute top-4 left-4 bg-tertiary-fixed text-on-tertiary-fixed px-3 py-1 rounded-full font-label-caps text-[10px]">SEASONAL</span>
+</div>
+<div class="p-6">
+<div class="flex justify-between items-start mb-2">
+<h3 class="font-title-md text-title-md text-primary">Ceremonial Matcha</h3>
+<span class="font-plusJakartaSans font-bold text-title-md text-primary">Rp 42k</span>
+</div>
+<p class="text-body-sm text-on-surface-variant mb-6 line-clamp-2">Matcha berkualitas tinggi dari Uji, Jepang, disajikan dengan susu pilihan Anda.</p>
+<a href="../pemesanan_online_tahap_1_3_toko_kopi_jaya/code.html" class="w-full bg-primary py-3 rounded-lg text-white font-plusJakartaSans text-body-sm font-semibold active:scale-95 transition-all inline-block text-center">Pesan Sekarang</a>
+</div>
+</div>
+<!-- Featured Product: Croissant -->
+<div class="group relative bg-white rounded-xl overflow-hidden coffee-glow border border-secondary/10 hover:border-secondary transition-all">
+<div class="relative h-64 overflow-hidden">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="Golden, flaky buttery croissants stacked on a minimalist white ceramic platter. The texture of the pastry layers is sharp and detailed, illuminated by warm, high-key lighting that evokes a fresh morning in a boutique bakery. The background is a clean, modern cafe setting with soft cream walls and subtle espresso-colored accents." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAuwpWxRflLJjT78Yg2W-At2hMcFD7wM23QNjwq_gejvhf3k9DVTdKjeNV59EUFI_2FR4TXU9Bf4pzX4GUPIKczinAFnCfwiQGER4IigOspiWDW8elSf0cbDemYerJyUJn-WN97E26p8hu5rIMAdpUaUBFVpn8JWQ-PZVWHSgorbBbfaSDbxbeDwFTZ6SFIVcQPeU9-z6zZKxyRxRA7oeofCI5wRl6NotMlLPR5DVwNzIAdZbUZP0Bc4jnCtGt08deVMkUvF5OqQyK3"/>
+<span class="absolute top-4 left-4 bg-tertiary-fixed text-on-tertiary-fixed px-3 py-1 rounded-full font-label-caps text-[10px]">BEST SELLER</span>
+</div>
+<div class="p-6">
+<div class="flex justify-between items-start mb-2">
+<h3 class="font-title-md text-title-md text-primary">Butter Croissant</h3>
+<span class="font-plusJakartaSans font-bold text-title-md text-primary">Rp 28k</span>
+</div>
+<p class="text-body-sm text-on-surface-variant mb-6 line-clamp-2">Pastry berlapis yang renyah di luar dan lembut di dalam dengan rasa mentega yang kaya.</p>
+<a href="../pemesanan_online_tahap_1_3_toko_kopi_jaya/code.html" class="w-full bg-primary py-3 rounded-lg text-white font-plusJakartaSans text-body-sm font-semibold active:scale-95 transition-all inline-block text-center">Pesan Sekarang</a>
+</div>
+</div>
+<!-- Featured Product: Brownies -->
+<div class="group relative bg-white rounded-xl overflow-hidden coffee-glow border border-secondary/10 hover:border-secondary transition-all">
+<div class="relative h-64 overflow-hidden">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="Dense, fudgy dark chocolate brownies with a crackly top, served on a minimalist slate plate with a sprinkle of sea salt. The lighting is dramatic yet warm, casting soft shadows that emphasize the decadent texture of the chocolate. The overall style is premium and artisanal, set within a sophisticated, modern coffee house environment." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAw5RMWOjEV6fBFmMkIDW-In8jxDQNYrwYBghujahrR5JTqyzR7Z6XcEGhsh2QDCZnTKNCkND6a8LzDQzZfIrBvsYB1fYuf44y8fwVyqQg-bHpUOIwuo3efN6kQRwdvxUb1p16CAp36v831A8X8AyKzDPM63xiyReFlDya_gWcHjL58fMh2UOannABDbvzExtKZ24Zn_BTIfDyC33oDX98_MYhgPL6ujQtEOlz2Z1UnxUiPT-M5Jb2CEr3331JWlKCWDYKgF84O0uqg"/>
+</div>
+<div class="p-6">
+<div class="flex justify-between items-start mb-2">
+<h3 class="font-title-md text-title-md text-primary">Sea Salt Brownie</h3>
+<span class="font-plusJakartaSans font-bold text-title-md text-primary">Rp 32k</span>
+</div>
+<p class="text-body-sm text-on-surface-variant mb-6 line-clamp-2">Cokelat hitam pekat dengan sentuhan sea salt premium untuk keseimbangan rasa sempurna.</p>
+<a href="../pemesanan_online_tahap_1_3_toko_kopi_jaya/code.html" class="w-full bg-primary py-3 rounded-lg text-white font-plusJakartaSans text-body-sm font-semibold active:scale-95 transition-all inline-block text-center">Pesan Sekarang</a>
+</div>
+</div>
+<!-- CTA Item -->
+<div class="relative bg-secondary-container rounded-xl flex flex-col justify-center items-center p-8 text-center border border-secondary/20 coffee-glow">
+<span class="material-symbols-outlined text-on-secondary-container text-6xl mb-4" style="font-variation-settings: 'FILL' 1;">card_giftcard</span>
+<h3 class="font-headline-lg text-headline-lg text-on-secondary-container mb-2">Member Jaya</h3>
+<p class="text-on-secondary-container/80 text-body-sm mb-6">Dapatkan poin di setiap transaksi dan nikmati penawaran eksklusif.</p>
+<button class="bg-primary text-white px-8 py-3 rounded-full font-bold active:scale-95 transition-all">Daftar Sekarang</button>
+</div>
+</div>
+</div>
+</div>
+</main>
+<!-- Footer -->
+<footer class="w-full px-margin-mobile md:px-margin-desktop py-12 flex flex-col md:flex-row justify-between items-center gap-8 bg-primary dark:bg-surface-container-highest border-t border-secondary/20 transition-all duration-300">
+<div class="flex flex-col items-center md:items-start gap-4">
+<div class="font-ebGaramond text-headline-lg text-secondary-fixed">Toko Kopi Jaya</div>
+<p class="font-plusJakartaSans text-body-sm text-on-primary/60 max-w-sm text-center md:text-left">© 2024 Toko Kopi Jaya. Kehangatan yang Elegan di Setiap Cangkir.</p>
+</div>
+<div class="flex gap-8">
+<a class="font-plusJakartaSans text-body-sm text-on-primary/60 hover:text-secondary-fixed hover:underline decoration-secondary-fixed underline-offset-4 transition-all" href="#">Kebijakan Privasi</a>
+<a class="font-plusJakartaSans text-body-sm text-on-primary/60 hover:text-secondary-fixed hover:underline decoration-secondary-fixed underline-offset-4 transition-all" href="#">Syarat &amp; Ketentuan</a>
+<a class="font-plusJakartaSans text-body-sm text-on-primary/60 hover:text-secondary-fixed hover:underline decoration-secondary-fixed underline-offset-4 transition-all" href="#">Bantuan</a>
+<a class="font-plusJakartaSans text-body-sm text-on-primary/60 hover:text-secondary-fixed hover:underline decoration-secondary-fixed underline-offset-4 transition-all" href="#">Karir</a>
+</div>
+<div class="flex gap-4">
+<button class="w-10 h-10 flex items-center justify-center rounded-full border border-secondary/20 text-on-primary/60 hover:text-secondary-fixed hover:border-secondary-fixed transition-all">
+<span class="material-symbols-outlined">public</span>
+</button>
+<button class="w-10 h-10 flex items-center justify-center rounded-full border border-secondary/20 text-on-primary/60 hover:text-secondary-fixed hover:border-secondary-fixed transition-all">
+<span class="material-symbols-outlined">alternate_email</span>
+</button>
+</div>
+</footer>
+</body></html>
